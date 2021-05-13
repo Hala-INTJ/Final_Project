@@ -15,8 +15,8 @@ The final results will be presented as a web page with the results of the models
 ## Project Deliverables
 
 - Week 1: 
-    - Intitial meeting with the plant supervisor
+    - Initial meeting with the plant supervisor
     - 13 Excel spreadsheets were collected
-    - The plant supervisor provided the following diagram:
-    ![]()
+    - The plant supervisor provided the following diagram for the process:
+    ![](https://github.com/Hala-INTJ/Final_Project/blob/main/Resources/Process.png)
 
