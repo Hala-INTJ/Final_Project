@@ -17,6 +17,8 @@ The final results will be presented as a web page with the results of the models
 - Week 1: 
     - Initial meeting with the plant supervisor
     - 13 Excel spreadsheets were collected
+    - Preliminary review of data in excel spreadsheets
+    - Prepared an overiew document with clarification questions for the plant supervisor [](.xls)
     - The plant supervisor provided the following diagram for the process:
     ![](https://github.com/Hala-INTJ/Final_Project/blob/main/Resources/Process.png)
 
