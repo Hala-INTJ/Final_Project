@@ -1,20 +1,3 @@
-<style>
-table th:first-of-type {
-    width: 4%;
-}
-table th:nth-of-type(2) {
-    width: 32%;
-}
-table th:nth-of-type(3) {
-    width: 32%;
-}
-table th:nth-of-type(4) {
-    width: 32%;
-}
-table td{
-    vertical-align: top;
-}
-</style>
 # Final Project: Final Effluent Total Phosphorus Analysis
 ## Overview 
 This project will work with data provided by a Wastewater Treatment Facility. The plant supervisor has to accommodate new limits coming into effect in the near future for Final Effluent Total Phosphorus (TP). There are strict limits on effluent released into the environment, and the goal is to determine if the TP can be predicted, or if an exceedance event can be classified from the existing plant SCADA data (Supervisory Control and Data Acquisition) such as flow rates, chemical dosing and lab analysis results. The plant supervisor has some working theories on existing metrics which may contribute to TP exceedances such as: sludge buildup in primaries causing solids to carry over out of the primaries. This information will be used in building and training of one or more models. The goal is to create a 'warning system' to provide early notification when a TP exceedance may be imminent. The approach taken in this project is inspired by the research conducted by Emile Cornelissen in this paper "https://fse.studenttheses.ub.rug.nl/18915/1/Thesis_EmileCornelissen.pdf".
@@ -44,9 +27,9 @@ The final results will be presented as a web page with the results of the models
         * Models will only be built for Stage 3, representing the newer portion of the plant
         * Stage 3 is further subdivided into 6 independent sub-trains. Models will be built for each of these sub-trains with the target to be "Total Phosphorous" at the end of each sub-train.
     
-    - Updated the overview spreadsheet [Machine Learning Documents Summary.xlsx]() to include the mapping of each tag into trains, stages and process areas. This was necessary for understanding the relationships between the tags and processes, and to ensure the dataset is complete. Each train is an independent path wastewater flows through the plant.
+    - Updated the overview spreadsheet [Machine Learning Documents Summary.xlsx](https://github.com/Hala-INTJ/Final_Project/blob/main/Resources/Machine%20Learning%20Documents%20Summary.xlsx) to include the mapping of each tag into trains, stages and process areas. This was necessary for understanding the relationships between the tags and processes, and to ensure the dataset is complete. Each train is an independent path wastewater flows through the plant.
 
-    - Database Design (ERD Diagram)
+    - Database Design
 
         For all the options below, there will be a table identifying all of the tags and other meta data relating to the collection of source files. Four options were identified and evaluated, and option 4 was selected. 
 
@@ -57,7 +40,7 @@ The final results will be presented as a web page with the results of the models
         | 3 | Tables: 26<br />1 table per excel file | * Convenient for loading data into the Database | * Will require several DataFrames merges to group data appropriately |
         4 | Tables: 8<br />1 table per process area | * Good balance between single table and 1 table per excel file<br />* Allows clean DataFrames for data preparation and combinations<br />* Will require fewer DataFrames merges when preparing for ML models | * Some excel files will populate more than 1 table<br />* Some data may be replicated in more than 1 table |
 
-        Here is the link to the ERD [](). The Tag table is used during the ETL process to translate the source tag names to ML tags, which are better suited to prepare data for machine learning models. The remaining tables represent process areas and are columnar, indexed by time for efficient retrieval for modeling.
+        Here is the link to the ERD [](https://github.com/Hala-INTJ/Final_Project/blob/main/Resources/ERD.png). The Tag table is used during the ETL process to translate the source tag names to ML tags, which are better suited to prepare data for machine learning models. The remaining tables represent process areas and are columnar, indexed by time for efficient retrieval for modeling.
 
    - ETL Implementation
     
@@ -69,7 +52,7 @@ The final results will be presented as a web page with the results of the models
         * unexpected negative values
         * complex and long column headers 
         
-        The ETL process was implemented using Jupyter notebooks, and with common, reusable functions collected in a separate Python script (ETL.py)[]. A Jupyter notebook was created for each Excel file, whare are found in (ETL Folder)[]. The process for each file involved the following steps:
+        The ETL process was implemented using Jupyter notebooks, and with common, reusable functions collected in a separate Python script (ETL.py)[]. A Jupyter notebook was created for each Excel file, whare are found in [ETL Folder](https://github.com/Hala-INTJ/Final_Project/tree/main/ETL). The process for each file involved the following steps:
         - Load the data into a DataFrame from Excel
         - Remove Text and replace with NaN
         - Remove less than sign, and replace with 1/2 the original value (<x becomes x/2)
