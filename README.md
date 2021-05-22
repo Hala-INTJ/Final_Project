@@ -1,3 +1,20 @@
+<style>
+table th:first-of-type {
+    width: 4%;
+}
+table th:nth-of-type(2) {
+    width: 32%;
+}
+table th:nth-of-type(3) {
+    width: 32%;
+}
+table th:nth-of-type(4) {
+    width: 32%;
+}
+table td{
+    vertical-align: top;
+}
+</style>
 # Final Project: Final Effluent Total Phosphorus Analysis
 ## Overview 
 This project will work with data provided by a Wastewater Treatment Facility. The plant supervisor has to accommodate new limits coming into effect in the near future for Final Effluent Total Phosphorus (TP). There are strict limits on effluent released into the environment, and the goal is to determine if the TP can be predicted, or if an exceedance event can be classified from the existing plant SCADA data (Supervisory Control and Data Acquisition) such as flow rates, chemical dosing and lab analysis results. The plant supervisor has some working theories on existing metrics which may contribute to TP exceedances such as: sludge buildup in primaries causing solids to carry over out of the primaries. This information will be used in building and training of one or more models. The goal is to create a 'warning system' to provide early notification when a TP exceedance may be imminent. The approach taken in this project is inspired by the research conducted by Emile Cornelissen in this paper "https://fse.studenttheses.ub.rug.nl/18915/1/Thesis_EmileCornelissen.pdf".
