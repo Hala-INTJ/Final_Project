@@ -12,75 +12,73 @@ This project has a clear target which is Total Phosphorus. A variety of supervis
 The final results will be presented as a web page with the results of the models, and a set of visualizations to support the findings. If no model is able to achieve a 90% accuracy, recommendations on possible steps which could be taken to improve the results will be included.
 
 ## Project Deliverables
-
 ### Week 1: 
-    - Initial meeting with the plant supervisor
-    - 25 Excel spreadsheets were collected
-    - Preliminary review of data in excel spreadsheets
-    - Prepared an overview document with clarification questions for the plant supervisor [Machine Learning Documents Summary.xlsx](https://github.com/Hala-INTJ/Final_Project/blob/main/Resources/Machine%20Learning%20Documents%20Summary.xlsx)
-    - The plant supervisor provided the following diagram for the process:
-    ![](https://github.com/Hala-INTJ/Final_Project/blob/main/Resources/Process.png)
+- Initial meeting with the plant supervisor
+- 25 Excel spreadsheets were collected
+- Preliminary review of data in excel spreadsheets
+- Prepared an overview document with clarification questions for the plant supervisor [Machine Learning Documents Summary.xlsx](https://github.com/Hala-INTJ/Final_Project/blob/main/Resources/Machine%20Learning%20Documents%20Summary.xlsx)
+- The plant supervisor provided the following diagram for the process:
+![](https://github.com/Hala-INTJ/Final_Project/blob/main/Resources/Process.png)
 
 ### Week 2:
-    - Progress review meeting with the plant supervisor
-        * The process flows through the plant are divided into 3 stages, which represent 6 independent trains
-        * Models will only be built for Stage 3, representing the newer portion of the plant
-        * Stage 3 is further subdivided into 6 independent sub-trains. Models will be built for each of these sub-trains with the target to be "Total Phosphorous" at the end of each sub-train.
+#### Progress review meeting with the plant supervisor
+- The process flows through the plant are divided into 3 stages, which represent 6 independent trains
+- Models will only be built for Stage 3, representing the newer portion of the plant
+- Stage 3 is further subdivided into 6 independent sub-trains. Models will be built for each of these sub-trains with the target to be "Total Phosphorous" at the end of each sub-train.
     
-    - Updated the overview spreadsheet [Machine Learning Documents Summary.xlsx](https://github.com/Hala-INTJ/Final_Project/blob/main/Resources/Machine%20Learning%20Documents%20Summary.xlsx) to include the mapping of each tag into trains, stages and process areas. This was necessary for understanding the relationships between the tags and processes, and to ensure the dataset is complete. Each train is an independent path wastewater flows through the plant.
+#### Mapping tags to Trains
+Updated the overview spreadsheet [Machine Learning Documents Summary.xlsx](https://github.com/Hala-INTJ/Final_Project/blob/main/Resources/Machine%20Learning%20Documents%20Summary.xlsx) to include the mapping of each tag into trains, stages and process areas. This was necessary for understanding the relationships between the tags and processes, and to ensure the dataset is complete. Each train is an independent path wastewater flows through the plant.
 
-    - Database Design
+#### Database Design
+For all the options below, there will be a table identifying all of the tags and other meta data relating to the collection of source files. Four options were identified and evaluated, and option 4 was selected. 
 
-        For all the options below, there will be a table identifying all of the tags and other meta data relating to the collection of source files. Four options were identified and evaluated, and option 4 was selected. 
+| Option | Description | Pros | Cons |
+| :---: | :--- | :--- | :--- |
+| 1 | Tables: 2<br />1 row per time/tag value (~435,000 rows) | * Add data for new tags without changing the schema | * Difficult to query to build pandas DataFrames |
+| 2 | Tables: 2<br />1 column per tag (291 columns, ~1,500 rows) | * Easy to build pandas DataFrames | * Schema change every time adding a new tag |
+| 3 | Tables: 26<br />1 table per excel file | * Convenient for loading data into the Database | * Will require several DataFrames merges to group data appropriately |
+| 4 | Tables: 8<br />1 table per process area | * Good balance between single table and 1 table per excel file<br />* Allows clean DataFrames for data preparation and combinations<br />* Will require fewer DataFrames merges when preparing for ML models | * Some excel files will populate more than 1 table<br />* Some data may be replicated in more than 1 table |
 
-        | Option | Description | Pros | Cons |
-        | :---: | :--- | :--- | :--- |
-        | 1 | Tables: 2<br />1 row per time/tag value (~435,000 rows) | * Add data for new tags without changing the schema | * Difficult to query to build pandas DataFrames |
-        | 2 | Tables: 2<br />1 column per tag (291 columns, ~1,500 rows) | * Easy to build pandas DataFrames | * Schema change every time adding a new tag |
-        | 3 | Tables: 26<br />1 table per excel file | * Convenient for loading data into the Database | * Will require several DataFrames merges to group data appropriately |
-        4 | Tables: 8<br />1 table per process area | * Good balance between single table and 1 table per excel file<br />* Allows clean DataFrames for data preparation and combinations<br />* Will require fewer DataFrames merges when preparing for ML models | * Some excel files will populate more than 1 table<br />* Some data may be replicated in more than 1 table |
+Here is the link to the [ERD](https://github.com/Hala-INTJ/Final_Project/blob/main/Resources/ERD.png). The Tag table is used during the ETL process to translate the source tag names to ML tags, which are better suited to prepare data for machine learning models. The remaining tables represent process areas and are columnar, indexed by time for efficient retrieval for modeling.
 
-        Here is the link to the ERD [](https://github.com/Hala-INTJ/Final_Project/blob/main/Resources/ERD.png). The Tag table is used during the ETL process to translate the source tag names to ML tags, which are better suited to prepare data for machine learning models. The remaining tables represent process areas and are columnar, indexed by time for efficient retrieval for modeling.
-
-   - ETL Implementation
-    
-        The data provided are daily time series data recorded at a wastewater treatment plant (WWTP). There were many challenges posed by the quality and consistency of the data:
+#### ETL Implementation    
+The data provided are daily time series data recorded at a wastewater treatment plant (WWTP). There were many challenges posed by the quality and consistency of the data:
             
-        * there were text values (eg. NT, OS, ND)
-        * some values were prefixed with '<' or '>'
-        * some columns had very sparse data (eg. some analytes)
-        * unexpected negative values
-        * complex and long column headers 
+- there were text values (eg. NT, OS, ND)
+- some values were prefixed with '<' or '>'
+- some columns had very sparse data (eg. some analytes)
+- unexpected negative values
+- complex and long column headers 
         
-        The ETL process was implemented using Jupyter notebooks, and with common, reusable functions collected in a separate Python script (ETL.py)[]. A Jupyter notebook was created for each Excel file, whare are found in [ETL Folder](https://github.com/Hala-INTJ/Final_Project/tree/main/ETL). The process for each file involved the following steps:
-        - Load the data into a DataFrame from Excel
-        - Remove Text and replace with NaN
-        - Remove less than sign, and replace with 1/2 the original value (<x becomes x/2)
-        - Remove greater than sign, and replace with the original value (>x becomes x)
-        - Remove 'Time' column
-        - Convert the data type to numeric for all columns except the 'Time' column
-        - Identify outliers using STL (Seasonal and Trend decomposition using Loess)
-        - Remove outliers and replace with NaN
-        - Replace negative values with 0
-        - To replace NaN values, interpolate using 'pchip' method (Piecewise Cubic Hermite Interpolating Polynomial)
-        - Re-insert the 'Time' column
-        - Converted column headers to ML Tags using a standardized naming convention (Train, Stage, Process Area, Pri/Sec, Type)
-        - Write the DataFrame to Postgres Database
+The ETL process was implemented using Jupyter notebooks, and with common, reusable functions collected in a separate Python script [ETL.py](https://github.com/Hala-INTJ/Final_Project/blob/main/ETL/ETL.py). A Jupyter notebook was created for each Excel file, whare are found in [ETL Folder](https://github.com/Hala-INTJ/Final_Project/tree/main/ETL). The process for each file involved the following steps:
+- Load the data into a DataFrame from Excel
+- Remove Text and replace with NaN
+- Remove less than sign, and replace with 1/2 the original value (<x becomes x/2)
+- Remove greater than sign, and replace with the original value (>x becomes x)
+- Remove 'Time' column
+- Convert the data type to numeric for all columns except the 'Time' column
+- Identify outliers using STL (Seasonal and Trend decomposition using Loess)
+- Remove outliers and replace with NaN
+- Replace negative values with 0
+- To replace NaN values, interpolate using 'pchip' method (Piecewise Cubic Hermite Interpolating Polynomial)
+- Re-insert the 'Time' column
+- Converted column headers to ML Tags using a standardized naming convention (Train, Stage, Process Area, Pri/Sec, Type)
+- Write the DataFrame to Postgres Database
 
-        The ETL implementations include a number of visualizations before and after interpolation, which were used to inspect and review the data. 
+The ETL implementations include a number of visualizations before and after interpolation, which were used to inspect and review the data. 
 
-        The ETL process resulted in the following tables:
+The ETL process resulted in the following tables:
 
-        | Table Name | Number of Records | Number of Columns |
-        | --- | --- | --- |
-        | Tags | 290 | 11 |
-        | Influent | 1592 | 15 |
-        | Preliminary | 1592 | 5 |
-        | Primary | 1592 | 111 |
-        | Aeration | 1592 | 54 |
-        | Secondary | 1592 | 97 |
-        | Incineration | 1591 | 2 |
-        | Effluent | 1592| 13 |
+| Table Name | Number of Records | Number of Columns |
+| --- | --- | --- |
+| Tags | 290 | 11 |
+| Influent | 1592 | 15 |
+| Preliminary | 1592 | 5 |
+| Primary | 1592 | 111 |
+| Aeration | 1592 | 54 |
+| Secondary | 1592 | 97 |
+| Incineration | 1591 | 2 |
+| Effluent | 1592| 13 |
 ## Technical Terms
 
 **Aeration**: The process of adding air to water. In wastewater treatment, air is added to refreshen wastewater and to keep solids in suspension. With mixtures of wastewater and activated sludge, adding air provides mixing and oxygen for the microorganisms treating the wastewater. 
