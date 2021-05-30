@@ -80,15 +80,13 @@ The ETL process resulted in the following tables:
 | Effluent | 1592| 13 |
 
 ### Week 3:
-
-A variety of models were explored to determine if any were suitable for the prediction or idenfication of Total Phosphorus exceeding 0.35mg/L. The indvidual model types and generated artifacts are listed in the sections below. The models were created and tested for only Stage 3 trains, which encompassed primaries 9-14, and secondaries 17-22.
+A variety of models were explored to determine if any were suitable for the prediction or identification of Total Phosphorus exceeding 0.35mg/L. The individual model types and generated artifacts are listed in the sections below. The models were created and tested for only Stage 3 trains, which encompassed primaries 9-14, and secondaries 17-22.
 
 The data prepared for the models included the preliminary, primary, aeration and secondary data provided by the plant supervisor. This data was isolated within the plant, and dependencies were easily determined. Plant influent and effluent values were included with early model iterations, but were dropped as they did not impact the results. In addition, four of the primary/secondary analytes were dropped due to a lack of data.
 
-Many permutations of model configuration parameters were evaluated. Jupyter notebooks for all model/train combinations are available in [ML Models folder]().
+Many permutations of model configuration parameters were evaluated. Jupyter notebooks for all model/train combinations are available in [ML Models folder](https://github.com/Hala-INTJ/Final_Project/tree/main/ML%20Models).
 
 #### Supervised Regression Models
-
 The regression models were evaluated on their ability to accurately determine when the secondary effluent total phosphorus exceeded 0.35mg/L. The target values were scaled before fitting the model, and then inverse scaled for evaluation purposes. The predicted values were plotted against the actual values for comparison.
 
 For each of the six trains analyzed, the following regressions were evaluated:
@@ -107,15 +105,14 @@ The metrics used to evaluate the model results:
 - Root Mean Square Error
 - Mean Absolute Error
 
-To split and standardize data, and then fit, predict and evaluate these models, functions were created in [Regression_Models.py]() to iterate over the model types with the same training and test data. The functions for Neural Network models were parameterized for the number of hidden layers and nodes/layer, activation function and the number of epochs.
+To split and standardize data, and then fit, predict and evaluate these models, functions were created in [Regression_Models.py](https://github.com/Hala-INTJ/Final_Project/blob/main/ML%20Models/Regression_Models.py) to iterate over the model types with the same training and test data. The functions for Neural Network models were parameterized for the number of hidden layers and nodes/layer, activation function and the number of epochs.
 #### Supervised Classification Models
-
-The classification models were evaluated on their ability to accurately classify a total phosphorus exceedence event. Models which maximized the true-positives (exceedance predicted correctly), and which minimized false-negatives (no exceedance predicted incorrectly) were factors considered important in evaluating their performance.
+The classification models were evaluated on their ability to accurately classify a total phosphorus exceedance event. Models which maximized the true-positives (exceedance predicted correctly), and which minimized false-negatives (no exceedance predicted incorrectly) were factors considered important in evaluating their performance.
 
 For each of the six trains analyzed, the following classifications were evaluated:
 - Logistic Regression (lbfgs)
 - SVC (poly)
-- Descision Tree Classification
+- Decision Tree Classification
 - Random Forest Classification
 - Balanced Random Forest Classification
 - Easy Ensemble Classification
@@ -132,16 +129,14 @@ The metrics used to evaluate the model results:
 - "No Exceedance" Predicted Correctly (TN)
 - Classification Report
 
-To split and standardize data, and then fit, predict and evaluate these models, functions were created in [Classification_Models.py]() to iterate over the model types with the same training and test data. The functions were parameterized to allow the choice of using SMOTEENN to over-combine the dataset, and for Neural Network models, the number of hidden layers and nodes/layer, activation function and the number of epochs could be specified.
+To split and standardize data, and then fit, predict and evaluate these models, functions were created in [Classification_Models.py](https://github.com/Hala-INTJ/Final_Project/blob/main/ML%20Models/Classification_Models.py) to iterate over the model types with the same training and test data. The functions were parameterized to allow the choice of using SMOTEENN to over-combine the dataset, and for Neural Network models, the number of hidden layers and nodes/layer, activation function and the number of epochs could be specified.
 #### Unsupervised Models
-
-The unspervised models were created to better explore the classes where the total phosphorus exceeded the 0.35mg/L target.  PCA was applied to reduce dimensionality, and the plot illustrated distinct clusters.
+The unsupervised models were created to better explore the classes where the total phosphorus exceeded the 0.35mg/L target.  PCA was applied to reduce dimensionality, and the plot illustrated distinct clusters.
 
 For each of the six trains analyzed, the following methods were implemented:
 - KMeans
 - Agglomerative Clustering
 #### Observations
-
 - The best of the supervised models were only accurate and predicting TP > 0.35mg/L ~67% of the time
 - Of the regression models, only the Linear Regression, Gradient Boosting Regressor and Neural Network models were moderately successful
 - Of the classification models, only the Gradient Boosting Classifier (SMOTEENN) showed some promise
