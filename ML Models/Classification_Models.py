@@ -87,10 +87,10 @@ def run_models(X,y,smoteenn=False):
         d['Name'] = (f"{name}{' (SMOTEENN)' if smoteenn else ''}")
         d['Accuracy Score'] = (f"{accuracy_score(y_test, y_pred):.4f}")
         d['Balanced Accuracy Score'] = (f"{balanced_accuracy_score(y_test, y_pred):.4f}")
-        d['"Exceedance" Predicted Correctly (TP)'] = CM[0][0]
-        d['"Exceedance" Predicted Incorrectly (FP)'] = CM[0][1]
-        d['"No Exceedance" Predicted Incorrectly (FN)'] = CM[1][0]
-        d['"No Exceedance" Predicted Correctly (TN)'] = CM[1][1]
+        d['Actual Exceedance, Predicted Exceedance (TP)'] = (f"{CM[0][0]}")
+        d['Actual Exceedance, Predicted Non-Exceedance (FN)'] = (f"{CM[0][1]}")
+        d['Actual Non-Exceedance, Predicted Exceedance (FP)'] = (f"{CM[1][0]}")
+        d['Actual Non-Exceedance, Predicted Non-Exceedance (TN)'] = (f"{CM[1][1]}")
         d['Actual'] = (f"{(y_test == 0).sum()}")
         outcome.append(d)
     return pd.DataFrame(outcome)
