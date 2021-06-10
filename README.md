@@ -92,7 +92,7 @@ The regression models were evaluated on their ability to accurately determine wh
 For each of the six trains analyzed, the following regressions were evaluated:
 - Linear Regression
 - SVR (Linear)
-- Descision Tree Regression
+- Decision Tree Regression
 - Random Forest Regression
 - Gradient Boosting Regressor
 - Ada Boost Regressor
@@ -138,7 +138,7 @@ For each of the six trains analyzed, the following methods were implemented:
 - Agglomerative Clustering
 
 ### Week 4:
-A webpage was built to present the Wastewater treatment process overview, the project overview and the results of the Regression and Classification models. The data files for the web page are in [Results Folder], the web application logic is in [models.js](), [functions.js]() and [tree.js](), and the structure of the webpage is in [index.html](). The [styles.css]() is used to format the contents of the webpage.
+A webpage was built to present the Wastewater treatment process overview, the project overview and the results of the Regression and Classification models. The data files for the web page are in [Results Folder](https://github.com/Hala-INTJ/Final_Project/tree/main/Website/Results), the web application logic is in [models.js](https://github.com/Hala-INTJ/Final_Project/blob/main/Website/models.js), [functions.js](https://github.com/Hala-INTJ/Final_Project/blob/main/Website/functions.js) and [tree.js](https://github.com/Hala-INTJ/Final_Project/blob/main/Website/tree.js), and the structure of the webpage is in [index.html](https://github.com/Hala-INTJ/Final_Project/blob/main/index.html). The [styles.css](https://github.com/Hala-INTJ/Final_Project/blob/main/Website/styles.css) is used to format the contents of the webpage.
 #### Observations
 Observation #1:
 - The best of the supervised models were only accurate and predicting "TP > 0.35mg/L" ~67% of
@@ -159,7 +159,7 @@ Observation #5:
 - KMeans model with PCA showed distinct clusters
 
 Observation #6:
-- Feature importances for the models variations were inconsistent
+- Feature importances for the model variations were inconsistent
 - TP (total phosphorus) correlates very strongly with SRP (dissolved phosphorus)
 - Removing SRP resulted in much worse performance for all models
 
