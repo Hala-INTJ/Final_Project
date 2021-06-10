@@ -1,0 +1,236 @@
+{
+    "9": {
+        "outcome": {
+            "Name": "RandomForest",
+            "Accuracy Score": "0.9879",
+            "Balanced Accuracy Score": "0.5000",
+            "Actual Exceedance, Predicted Exceedance (TP)": "0",
+            "Actual Exceedance, Predicted Non-Exceedance (FN)": "5",
+            "Actual Non-Exceedance, Predicted Exceedance (FP)": "0",
+            "Actual Non-Exceedance, Predicted Non-Exceedance (TN)": "408",
+            "Actual": "5"
+        },
+        "classification": {
+            "0": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 5
+            },
+            "1": {
+                "precision": 0.9878934624697336,
+                "recall": 1.0,
+                "f1-score": 0.9939098660170523,
+                "support": 408
+            },
+            "accuracy": 0.9878934624697336,
+            "macro avg": {
+                "precision": 0.4939467312348668,
+                "recall": 0.5,
+                "f1-score": 0.49695493300852617,
+                "support": 413
+            },
+            "weighted avg": {
+                "precision": 0.9759334931904391,
+                "recall": 0.9878934624697336,
+                "f1-score": 0.9818770589224148,
+                "support": 413
+            }
+        }
+    },
+    "10": {
+        "outcome": {
+            "Name": "RandomForest",
+            "Accuracy Score": "0.9758",
+            "Balanced Accuracy Score": "0.6667",
+            "Actual Exceedance, Predicted Exceedance (TP)": "5",
+            "Actual Exceedance, Predicted Non-Exceedance (FN)": "10",
+            "Actual Non-Exceedance, Predicted Exceedance (FP)": "0",
+            "Actual Non-Exceedance, Predicted Non-Exceedance (TN)": "398",
+            "Actual": "15"
+        },
+        "classification": {
+            "0": {
+                "precision": 1.0,
+                "recall": 0.3333333333333333,
+                "f1-score": 0.5,
+                "support": 15
+            },
+            "1": {
+                "precision": 0.9754901960784313,
+                "recall": 1.0,
+                "f1-score": 0.987593052109181,
+                "support": 398
+            },
+            "accuracy": 0.9757869249394673,
+            "macro avg": {
+                "precision": 0.9877450980392157,
+                "recall": 0.6666666666666666,
+                "f1-score": 0.7437965260545905,
+                "support": 413
+            },
+            "weighted avg": {
+                "precision": 0.9763803826615391,
+                "recall": 0.9757869249394673,
+                "f1-score": 0.9698838613546102,
+                "support": 413
+            }
+        }
+    },
+    "11": {
+        "outcome": {
+            "Name": "RandomForest",
+            "Accuracy Score": "0.9322",
+            "Balanced Accuracy Score": "0.5172",
+            "Actual Exceedance, Predicted Exceedance (TP)": "1",
+            "Actual Exceedance, Predicted Non-Exceedance (FN)": "28",
+            "Actual Non-Exceedance, Predicted Exceedance (FP)": "0",
+            "Actual Non-Exceedance, Predicted Non-Exceedance (TN)": "384",
+            "Actual": "29"
+        },
+        "classification": {
+            "0": {
+                "precision": 1.0,
+                "recall": 0.034482758620689655,
+                "f1-score": 0.06666666666666667,
+                "support": 29
+            },
+            "1": {
+                "precision": 0.9320388349514563,
+                "recall": 1.0,
+                "f1-score": 0.9648241206030151,
+                "support": 384
+            },
+            "accuracy": 0.9322033898305084,
+            "macro avg": {
+                "precision": 0.9660194174757282,
+                "recall": 0.5172413793103449,
+                "f1-score": 0.515745393634841,
+                "support": 413
+            },
+            "weighted avg": {
+                "precision": 0.9368109264439691,
+                "recall": 0.9322033898305084,
+                "f1-score": 0.9017573744428357,
+                "support": 413
+            }
+        }
+    },
+    "12": {
+        "outcome": {
+            "Name": "RandomForest",
+            "Accuracy Score": "0.9879",
+            "Balanced Accuracy Score": "0.4976",
+            "Actual Exceedance, Predicted Exceedance (TP)": "0",
+            "Actual Exceedance, Predicted Non-Exceedance (FN)": "3",
+            "Actual Non-Exceedance, Predicted Exceedance (FP)": "2",
+            "Actual Non-Exceedance, Predicted Non-Exceedance (TN)": "408",
+            "Actual": "3"
+        },
+        "classification": {
+            "0": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 3
+            },
+            "1": {
+                "precision": 0.9927007299270073,
+                "recall": 0.9951219512195122,
+                "f1-score": 0.9939098660170523,
+                "support": 410
+            },
+            "accuracy": 0.9878934624697336,
+            "macro avg": {
+                "precision": 0.49635036496350365,
+                "recall": 0.4975609756097561,
+                "f1-score": 0.49695493300852617,
+                "support": 413
+            },
+            "weighted avg": {
+                "precision": 0.9854898287410969,
+                "recall": 0.9878934624697336,
+                "f1-score": 0.9866901817602698,
+                "support": 413
+            }
+        }
+    },
+    "13": {
+        "outcome": {
+            "Name": "RandomForest",
+            "Accuracy Score": "0.8814",
+            "Balanced Accuracy Score": "0.4573",
+            "Actual Exceedance, Predicted Exceedance (TP)": "0",
+            "Actual Exceedance, Predicted Non-Exceedance (FN)": "15",
+            "Actual Non-Exceedance, Predicted Exceedance (FP)": "34",
+            "Actual Non-Exceedance, Predicted Non-Exceedance (TN)": "364",
+            "Actual": "15"
+        },
+        "classification": {
+            "0": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 15
+            },
+            "1": {
+                "precision": 0.9604221635883905,
+                "recall": 0.914572864321608,
+                "f1-score": 0.9369369369369369,
+                "support": 398
+            },
+            "accuracy": 0.8813559322033898,
+            "macro avg": {
+                "precision": 0.48021108179419525,
+                "recall": 0.457286432160804,
+                "f1-score": 0.46846846846846846,
+                "support": 413
+            },
+            "weighted avg": {
+                "precision": 0.9255400026832432,
+                "recall": 0.8813559322033898,
+                "f1-score": 0.9029077503653774,
+                "support": 413
+            }
+        }
+    },
+    "14": {
+        "outcome": {
+            "Name": "RandomForest",
+            "Accuracy Score": "0.9426",
+            "Balanced Accuracy Score": "0.7243",
+            "Actual Exceedance, Predicted Exceedance (TP)": "8",
+            "Actual Exceedance, Predicted Non-Exceedance (FN)": "9",
+            "Actual Non-Exceedance, Predicted Exceedance (FP)": "5",
+            "Actual Non-Exceedance, Predicted Non-Exceedance (TN)": "222",
+            "Actual": "17"
+        },
+        "classification": {
+            "0": {
+                "precision": 0.6153846153846154,
+                "recall": 0.47058823529411764,
+                "f1-score": 0.5333333333333333,
+                "support": 17
+            },
+            "1": {
+                "precision": 0.961038961038961,
+                "recall": 0.9779735682819384,
+                "f1-score": 0.9694323144104803,
+                "support": 227
+            },
+            "accuracy": 0.9426229508196722,
+            "macro avg": {
+                "precision": 0.7882117882117883,
+                "recall": 0.7242809017880281,
+                "f1-score": 0.7513828238719068,
+                "support": 244
+            },
+            "weighted avg": {
+                "precision": 0.936956486136814,
+                "recall": 0.9426229508196722,
+                "f1-score": 0.9390483690075644,
+                "support": 244
+            }
+        }
+    }
+}

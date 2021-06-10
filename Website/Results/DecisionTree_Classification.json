@@ -1,0 +1,236 @@
+{
+    "9": {
+        "outcome": {
+            "Name": "DecisionTree",
+            "Accuracy Score": "0.8935",
+            "Balanced Accuracy Score": "0.4522",
+            "Actual Exceedance, Predicted Exceedance (TP)": "0",
+            "Actual Exceedance, Predicted Non-Exceedance (FN)": "5",
+            "Actual Non-Exceedance, Predicted Exceedance (FP)": "39",
+            "Actual Non-Exceedance, Predicted Non-Exceedance (TN)": "369",
+            "Actual": "5"
+        },
+        "classification": {
+            "0": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 5
+            },
+            "1": {
+                "precision": 0.9866310160427807,
+                "recall": 0.9044117647058824,
+                "f1-score": 0.9437340153452685,
+                "support": 408
+            },
+            "accuracy": 0.8934624697336562,
+            "macro avg": {
+                "precision": 0.49331550802139035,
+                "recall": 0.4522058823529412,
+                "f1-score": 0.47186700767263423,
+                "support": 413
+            },
+            "weighted avg": {
+                "precision": 0.9746863306185339,
+                "recall": 0.8934624697336562,
+                "f1-score": 0.932308664069902,
+                "support": 413
+            }
+        }
+    },
+    "10": {
+        "outcome": {
+            "Name": "DecisionTree",
+            "Accuracy Score": "0.8547",
+            "Balanced Accuracy Score": "0.4435",
+            "Actual Exceedance, Predicted Exceedance (TP)": "0",
+            "Actual Exceedance, Predicted Non-Exceedance (FN)": "15",
+            "Actual Non-Exceedance, Predicted Exceedance (FP)": "45",
+            "Actual Non-Exceedance, Predicted Non-Exceedance (TN)": "353",
+            "Actual": "15"
+        },
+        "classification": {
+            "0": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 15
+            },
+            "1": {
+                "precision": 0.9592391304347826,
+                "recall": 0.8869346733668342,
+                "f1-score": 0.9216710182767625,
+                "support": 398
+            },
+            "accuracy": 0.8547215496368039,
+            "macro avg": {
+                "precision": 0.4796195652173913,
+                "recall": 0.4434673366834171,
+                "f1-score": 0.4608355091383812,
+                "support": 413
+            },
+            "weighted avg": {
+                "precision": 0.9243999368354564,
+                "recall": 0.8547215496368039,
+                "f1-score": 0.8881962839567833,
+                "support": 413
+            }
+        }
+    },
+    "11": {
+        "outcome": {
+            "Name": "DecisionTree",
+            "Accuracy Score": "0.8717",
+            "Balanced Accuracy Score": "0.6281",
+            "Actual Exceedance, Predicted Exceedance (TP)": "10",
+            "Actual Exceedance, Predicted Non-Exceedance (FN)": "19",
+            "Actual Non-Exceedance, Predicted Exceedance (FP)": "34",
+            "Actual Non-Exceedance, Predicted Non-Exceedance (TN)": "350",
+            "Actual": "29"
+        },
+        "classification": {
+            "0": {
+                "precision": 0.22727272727272727,
+                "recall": 0.3448275862068966,
+                "f1-score": 0.273972602739726,
+                "support": 29
+            },
+            "1": {
+                "precision": 0.948509485094851,
+                "recall": 0.9114583333333334,
+                "f1-score": 0.9296148738379814,
+                "support": 384
+            },
+            "accuracy": 0.8716707021791767,
+            "macro avg": {
+                "precision": 0.5878911061837891,
+                "recall": 0.6281429597701149,
+                "f1-score": 0.6017937382888536,
+                "support": 413
+            },
+            "weighted avg": {
+                "precision": 0.8978657418095202,
+                "recall": 0.8716707021791767,
+                "f1-score": 0.8835770388213968,
+                "support": 413
+            }
+        }
+    },
+    "12": {
+        "outcome": {
+            "Name": "DecisionTree",
+            "Accuracy Score": "0.8087",
+            "Balanced Accuracy Score": "0.4073",
+            "Actual Exceedance, Predicted Exceedance (TP)": "0",
+            "Actual Exceedance, Predicted Non-Exceedance (FN)": "3",
+            "Actual Non-Exceedance, Predicted Exceedance (FP)": "76",
+            "Actual Non-Exceedance, Predicted Non-Exceedance (TN)": "334",
+            "Actual": "3"
+        },
+        "classification": {
+            "0": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 3
+            },
+            "1": {
+                "precision": 0.9910979228486647,
+                "recall": 0.8146341463414634,
+                "f1-score": 0.894243641231593,
+                "support": 410
+            },
+            "accuracy": 0.8087167070217918,
+            "macro avg": {
+                "precision": 0.49554896142433236,
+                "recall": 0.4073170731707317,
+                "f1-score": 0.4471218206157965,
+                "support": 413
+            },
+            "weighted avg": {
+                "precision": 0.9838986643291829,
+                "recall": 0.8087167070217918,
+                "f1-score": 0.8877479247093296,
+                "support": 413
+            }
+        }
+    },
+    "13": {
+        "outcome": {
+            "Name": "DecisionTree",
+            "Accuracy Score": "0.7409",
+            "Balanced Accuracy Score": "0.6090",
+            "Actual Exceedance, Predicted Exceedance (TP)": "7",
+            "Actual Exceedance, Predicted Non-Exceedance (FN)": "8",
+            "Actual Non-Exceedance, Predicted Exceedance (FP)": "99",
+            "Actual Non-Exceedance, Predicted Non-Exceedance (TN)": "299",
+            "Actual": "15"
+        },
+        "classification": {
+            "0": {
+                "precision": 0.0660377358490566,
+                "recall": 0.4666666666666667,
+                "f1-score": 0.11570247933884298,
+                "support": 15
+            },
+            "1": {
+                "precision": 0.9739413680781759,
+                "recall": 0.7512562814070352,
+                "f1-score": 0.8482269503546099,
+                "support": 398
+            },
+            "accuracy": 0.7409200968523002,
+            "macro avg": {
+                "precision": 0.5199895519636163,
+                "recall": 0.608961474036851,
+                "f1-score": 0.4819647148467264,
+                "support": 413
+            },
+            "weighted avg": {
+                "precision": 0.9409666598858349,
+                "recall": 0.7409200968523002,
+                "f1-score": 0.8216219453540373,
+                "support": 413
+            }
+        }
+    },
+    "14": {
+        "outcome": {
+            "Name": "DecisionTree",
+            "Accuracy Score": "0.9549",
+            "Balanced Accuracy Score": "0.9486",
+            "Actual Exceedance, Predicted Exceedance (TP)": "16",
+            "Actual Exceedance, Predicted Non-Exceedance (FN)": "1",
+            "Actual Non-Exceedance, Predicted Exceedance (FP)": "10",
+            "Actual Non-Exceedance, Predicted Non-Exceedance (TN)": "217",
+            "Actual": "17"
+        },
+        "classification": {
+            "0": {
+                "precision": 0.6153846153846154,
+                "recall": 0.9411764705882353,
+                "f1-score": 0.744186046511628,
+                "support": 17
+            },
+            "1": {
+                "precision": 0.9954128440366973,
+                "recall": 0.9559471365638766,
+                "f1-score": 0.9752808988764046,
+                "support": 227
+            },
+            "accuracy": 0.9549180327868853,
+            "macro avg": {
+                "precision": 0.8053987297106564,
+                "recall": 0.9485618035760559,
+                "f1-score": 0.8597334726940162,
+                "support": 244
+            },
+            "weighted avg": {
+                "precision": 0.9689354674502817,
+                "recall": 0.9549180327868853,
+                "f1-score": 0.9591800280149242,
+                "support": 244
+            }
+        }
+    }
+}

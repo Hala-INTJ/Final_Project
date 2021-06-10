@@ -1,0 +1,236 @@
+{
+    "9": {
+        "outcome": {
+            "Name": "SVC",
+            "Accuracy Score": "0.9879",
+            "Balanced Accuracy Score": "0.5000",
+            "Actual Exceedance, Predicted Exceedance (TP)": "0",
+            "Actual Exceedance, Predicted Non-Exceedance (FN)": "5",
+            "Actual Non-Exceedance, Predicted Exceedance (FP)": "0",
+            "Actual Non-Exceedance, Predicted Non-Exceedance (TN)": "408",
+            "Actual": "5"
+        },
+        "classification": {
+            "0": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 5
+            },
+            "1": {
+                "precision": 0.9878934624697336,
+                "recall": 1.0,
+                "f1-score": 0.9939098660170523,
+                "support": 408
+            },
+            "accuracy": 0.9878934624697336,
+            "macro avg": {
+                "precision": 0.4939467312348668,
+                "recall": 0.5,
+                "f1-score": 0.49695493300852617,
+                "support": 413
+            },
+            "weighted avg": {
+                "precision": 0.9759334931904391,
+                "recall": 0.9878934624697336,
+                "f1-score": 0.9818770589224148,
+                "support": 413
+            }
+        }
+    },
+    "10": {
+        "outcome": {
+            "Name": "SVC",
+            "Accuracy Score": "0.9516",
+            "Balanced Accuracy Score": "0.4937",
+            "Actual Exceedance, Predicted Exceedance (TP)": "0",
+            "Actual Exceedance, Predicted Non-Exceedance (FN)": "15",
+            "Actual Non-Exceedance, Predicted Exceedance (FP)": "5",
+            "Actual Non-Exceedance, Predicted Non-Exceedance (TN)": "393",
+            "Actual": "15"
+        },
+        "classification": {
+            "0": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 15
+            },
+            "1": {
+                "precision": 0.9632352941176471,
+                "recall": 0.9874371859296482,
+                "f1-score": 0.9751861042183623,
+                "support": 398
+            },
+            "accuracy": 0.9515738498789347,
+            "macro avg": {
+                "precision": 0.48161764705882354,
+                "recall": 0.4937185929648241,
+                "f1-score": 0.48759305210918114,
+                "support": 413
+            },
+            "weighted avg": {
+                "precision": 0.9282509614015098,
+                "recall": 0.9515738498789347,
+                "f1-score": 0.9397677227092208,
+                "support": 413
+            }
+        }
+    },
+    "11": {
+        "outcome": {
+            "Name": "SVC",
+            "Accuracy Score": "0.9298",
+            "Balanced Accuracy Score": "0.5000",
+            "Actual Exceedance, Predicted Exceedance (TP)": "0",
+            "Actual Exceedance, Predicted Non-Exceedance (FN)": "29",
+            "Actual Non-Exceedance, Predicted Exceedance (FP)": "0",
+            "Actual Non-Exceedance, Predicted Non-Exceedance (TN)": "384",
+            "Actual": "29"
+        },
+        "classification": {
+            "0": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 29
+            },
+            "1": {
+                "precision": 0.9297820823244553,
+                "recall": 1.0,
+                "f1-score": 0.9636135508155584,
+                "support": 384
+            },
+            "accuracy": 0.9297820823244553,
+            "macro avg": {
+                "precision": 0.4648910411622276,
+                "recall": 0.5,
+                "f1-score": 0.4818067754077792,
+                "support": 413
+            },
+            "weighted avg": {
+                "precision": 0.8644947206116,
+                "recall": 0.9297820823244553,
+                "f1-score": 0.8959506138333522,
+                "support": 413
+            }
+        }
+    },
+    "12": {
+        "outcome": {
+            "Name": "SVC",
+            "Accuracy Score": "0.9734",
+            "Balanced Accuracy Score": "0.4902",
+            "Actual Exceedance, Predicted Exceedance (TP)": "0",
+            "Actual Exceedance, Predicted Non-Exceedance (FN)": "3",
+            "Actual Non-Exceedance, Predicted Exceedance (FP)": "8",
+            "Actual Non-Exceedance, Predicted Non-Exceedance (TN)": "402",
+            "Actual": "3"
+        },
+        "classification": {
+            "0": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 3
+            },
+            "1": {
+                "precision": 0.9925925925925926,
+                "recall": 0.9804878048780488,
+                "f1-score": 0.9865030674846627,
+                "support": 410
+            },
+            "accuracy": 0.9733656174334141,
+            "macro avg": {
+                "precision": 0.4962962962962963,
+                "recall": 0.4902439024390244,
+                "f1-score": 0.4932515337423313,
+                "support": 413
+            },
+            "weighted avg": {
+                "precision": 0.9853824769079006,
+                "recall": 0.9733656174334141,
+                "f1-score": 0.9793371856385271,
+                "support": 413
+            }
+        }
+    },
+    "13": {
+        "outcome": {
+            "Name": "SVC",
+            "Accuracy Score": "0.9104",
+            "Balanced Accuracy Score": "0.4724",
+            "Actual Exceedance, Predicted Exceedance (TP)": "0",
+            "Actual Exceedance, Predicted Non-Exceedance (FN)": "15",
+            "Actual Non-Exceedance, Predicted Exceedance (FP)": "22",
+            "Actual Non-Exceedance, Predicted Non-Exceedance (TN)": "376",
+            "Actual": "15"
+        },
+        "classification": {
+            "0": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 15
+            },
+            "1": {
+                "precision": 0.9616368286445013,
+                "recall": 0.9447236180904522,
+                "f1-score": 0.9531051964512041,
+                "support": 398
+            },
+            "accuracy": 0.910411622276029,
+            "macro avg": {
+                "precision": 0.48081841432225064,
+                "recall": 0.4723618090452261,
+                "f1-score": 0.47655259822560203,
+                "support": 413
+            },
+            "weighted avg": {
+                "precision": 0.9267105515750884,
+                "recall": 0.910411622276029,
+                "f1-score": 0.9184887849578188,
+                "support": 413
+            }
+        }
+    },
+    "14": {
+        "outcome": {
+            "Name": "SVC",
+            "Accuracy Score": "0.9467",
+            "Balanced Accuracy Score": "0.8625",
+            "Actual Exceedance, Predicted Exceedance (TP)": "13",
+            "Actual Exceedance, Predicted Non-Exceedance (FN)": "4",
+            "Actual Non-Exceedance, Predicted Exceedance (FP)": "9",
+            "Actual Non-Exceedance, Predicted Non-Exceedance (TN)": "218",
+            "Actual": "17"
+        },
+        "classification": {
+            "0": {
+                "precision": 0.5909090909090909,
+                "recall": 0.7647058823529411,
+                "f1-score": 0.6666666666666667,
+                "support": 17
+            },
+            "1": {
+                "precision": 0.9819819819819819,
+                "recall": 0.960352422907489,
+                "f1-score": 0.9710467706013363,
+                "support": 227
+            },
+            "accuracy": 0.9467213114754098,
+            "macro avg": {
+                "precision": 0.7864455364455365,
+                "recall": 0.862529152630215,
+                "f1-score": 0.8188567186340014,
+                "support": 244
+            },
+            "weighted avg": {
+                "precision": 0.9547351002269036,
+                "recall": 0.9467213114754098,
+                "f1-score": 0.9498399600812979,
+                "support": 244
+            }
+        }
+    }
+}

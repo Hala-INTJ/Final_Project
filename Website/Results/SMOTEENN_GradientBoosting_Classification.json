@@ -1,0 +1,236 @@
+{
+    "9": {
+        "outcome": {
+            "Name": "GradientBoosting",
+            "Accuracy Score": "0.9370",
+            "Balanced Accuracy Score": "0.8694",
+            "Actual Exceedance, Predicted Exceedance (TP)": "4",
+            "Actual Exceedance, Predicted Non-Exceedance (FN)": "1",
+            "Actual Non-Exceedance, Predicted Exceedance (FP)": "25",
+            "Actual Non-Exceedance, Predicted Non-Exceedance (TN)": "383",
+            "Actual": "5"
+        },
+        "classification": {
+            "0": {
+                "precision": 0.13793103448275862,
+                "recall": 0.8,
+                "f1-score": 0.2352941176470588,
+                "support": 5
+            },
+            "1": {
+                "precision": 0.9973958333333334,
+                "recall": 0.9387254901960784,
+                "f1-score": 0.9671717171717172,
+                "support": 408
+            },
+            "accuracy": 0.937046004842615,
+            "macro avg": {
+                "precision": 0.567663433908046,
+                "recall": 0.8693627450980392,
+                "f1-score": 0.601232917409388,
+                "support": 413
+            },
+            "weighted avg": {
+                "precision": 0.986990690490106,
+                "recall": 0.937046004842615,
+                "f1-score": 0.9583112135455107,
+                "support": 413
+            }
+        }
+    },
+    "10": {
+        "outcome": {
+            "Name": "GradientBoosting",
+            "Accuracy Score": "0.9903",
+            "Balanced Accuracy Score": "0.9308",
+            "Actual Exceedance, Predicted Exceedance (TP)": "13",
+            "Actual Exceedance, Predicted Non-Exceedance (FN)": "2",
+            "Actual Non-Exceedance, Predicted Exceedance (FP)": "2",
+            "Actual Non-Exceedance, Predicted Non-Exceedance (TN)": "396",
+            "Actual": "15"
+        },
+        "classification": {
+            "0": {
+                "precision": 0.8666666666666667,
+                "recall": 0.8666666666666667,
+                "f1-score": 0.8666666666666667,
+                "support": 15
+            },
+            "1": {
+                "precision": 0.9949748743718593,
+                "recall": 0.9949748743718593,
+                "f1-score": 0.9949748743718593,
+                "support": 398
+            },
+            "accuracy": 0.9903147699757869,
+            "macro avg": {
+                "precision": 0.930820770519263,
+                "recall": 0.930820770519263,
+                "f1-score": 0.930820770519263,
+                "support": 413
+            },
+            "weighted avg": {
+                "precision": 0.9903147699757869,
+                "recall": 0.9903147699757869,
+                "f1-score": 0.9903147699757869,
+                "support": 413
+            }
+        }
+    },
+    "11": {
+        "outcome": {
+            "Name": "GradientBoosting",
+            "Accuracy Score": "0.9177",
+            "Balanced Accuracy Score": "0.8123",
+            "Actual Exceedance, Predicted Exceedance (TP)": "20",
+            "Actual Exceedance, Predicted Non-Exceedance (FN)": "9",
+            "Actual Non-Exceedance, Predicted Exceedance (FP)": "25",
+            "Actual Non-Exceedance, Predicted Non-Exceedance (TN)": "359",
+            "Actual": "29"
+        },
+        "classification": {
+            "0": {
+                "precision": 0.4444444444444444,
+                "recall": 0.6896551724137931,
+                "f1-score": 0.5405405405405405,
+                "support": 29
+            },
+            "1": {
+                "precision": 0.9755434782608695,
+                "recall": 0.9348958333333334,
+                "f1-score": 0.9547872340425533,
+                "support": 384
+            },
+            "accuracy": 0.9176755447941889,
+            "macro avg": {
+                "precision": 0.7099939613526569,
+                "recall": 0.8122755028735633,
+                "f1-score": 0.7476638872915469,
+                "support": 413
+            },
+            "weighted avg": {
+                "precision": 0.9382508100267865,
+                "recall": 0.9176755447941889,
+                "f1-score": 0.9256996938208623,
+                "support": 413
+            }
+        }
+    },
+    "12": {
+        "outcome": {
+            "Name": "GradientBoosting",
+            "Accuracy Score": "0.9298",
+            "Balanced Accuracy Score": "0.7992",
+            "Actual Exceedance, Predicted Exceedance (TP)": "2",
+            "Actual Exceedance, Predicted Non-Exceedance (FN)": "1",
+            "Actual Non-Exceedance, Predicted Exceedance (FP)": "28",
+            "Actual Non-Exceedance, Predicted Non-Exceedance (TN)": "382",
+            "Actual": "3"
+        },
+        "classification": {
+            "0": {
+                "precision": 0.06666666666666667,
+                "recall": 0.6666666666666666,
+                "f1-score": 0.1212121212121212,
+                "support": 3
+            },
+            "1": {
+                "precision": 0.9973890339425587,
+                "recall": 0.9317073170731708,
+                "f1-score": 0.9634300126103404,
+                "support": 410
+            },
+            "accuracy": 0.9297820823244553,
+            "macro avg": {
+                "precision": 0.5320278503046127,
+                "recall": 0.7991869918699187,
+                "f1-score": 0.5423210669112308,
+                "support": 413
+            },
+            "weighted avg": {
+                "precision": 0.9906283387807484,
+                "recall": 0.9297820823244553,
+                "f1-score": 0.9573122071038158,
+                "support": 413
+            }
+        }
+    },
+    "13": {
+        "outcome": {
+            "Name": "GradientBoosting",
+            "Accuracy Score": "0.7337",
+            "Balanced Accuracy Score": "0.5090",
+            "Actual Exceedance, Predicted Exceedance (TP)": "4",
+            "Actual Exceedance, Predicted Non-Exceedance (FN)": "11",
+            "Actual Non-Exceedance, Predicted Exceedance (FP)": "99",
+            "Actual Non-Exceedance, Predicted Non-Exceedance (TN)": "299",
+            "Actual": "15"
+        },
+        "classification": {
+            "0": {
+                "precision": 0.038834951456310676,
+                "recall": 0.26666666666666666,
+                "f1-score": 0.06779661016949153,
+                "support": 15
+            },
+            "1": {
+                "precision": 0.964516129032258,
+                "recall": 0.7512562814070352,
+                "f1-score": 0.844632768361582,
+                "support": 398
+            },
+            "accuracy": 0.7336561743341404,
+            "macro avg": {
+                "precision": 0.5016755402442844,
+                "recall": 0.5089614740368509,
+                "f1-score": 0.45621468926553677,
+                "support": 413
+            },
+            "weighted avg": {
+                "precision": 0.9308957472801049,
+                "recall": 0.7336561743341404,
+                "f1-score": 0.8164183800495207,
+                "support": 413
+            }
+        }
+    },
+    "14": {
+        "outcome": {
+            "Name": "GradientBoosting",
+            "Accuracy Score": "0.9303",
+            "Balanced Accuracy Score": "0.8265",
+            "Actual Exceedance, Predicted Exceedance (TP)": "12",
+            "Actual Exceedance, Predicted Non-Exceedance (FN)": "5",
+            "Actual Non-Exceedance, Predicted Exceedance (FP)": "12",
+            "Actual Non-Exceedance, Predicted Non-Exceedance (TN)": "215",
+            "Actual": "17"
+        },
+        "classification": {
+            "0": {
+                "precision": 0.5,
+                "recall": 0.7058823529411765,
+                "f1-score": 0.5853658536585366,
+                "support": 17
+            },
+            "1": {
+                "precision": 0.9772727272727273,
+                "recall": 0.947136563876652,
+                "f1-score": 0.9619686800894854,
+                "support": 227
+            },
+            "accuracy": 0.930327868852459,
+            "macro avg": {
+                "precision": 0.7386363636363636,
+                "recall": 0.8265094584089143,
+                "f1-score": 0.773667266874011,
+                "support": 244
+            },
+            "weighted avg": {
+                "precision": 0.9440201192250373,
+                "recall": 0.930327868852459,
+                "f1-score": 0.9357299585758537,
+                "support": 244
+            }
+        }
+    }
+}

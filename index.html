@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project</title>
+    <link rel="stylesheet" href="Website/styles.css">
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+
+<body>
+
+    <div class="sidebar">
+        <a id="menu1" class="activeMenuItem" onclick="showSubMenuPage('menu1', null, 'process')"><span
+                class="material-icons">account_tree</span> Process Overview</a>
+        <a id="menu2" onclick="showSubMenuPage('menu2', null, 'project')"><span
+                class="material-icons">model_training</span> Project Overview</a>
+        <a id="menu3" onclick="showSubMenuPage('menu3', 'sub3', 'regression')"><span
+                class="material-icons">insights</span> Regression Models</a>
+        <div class="dropdown" id="sub3" style="display: none;">
+            <a id="sub3a" onclick="showPlots('sub3a', 'Linear_Regression')">Linear</a>
+            <a id="sub3b" onclick="showPlots('sub3b', 'SVR_Regression')">SVR</a>
+            <a id="sub3c" onclick="showPlots('sub3c', 'DecisionTree_Regression')">Decision Tree</a>
+            <a id="sub3d" onclick="showPlots('sub3d', 'RandomForest_Regression')">Random Forest</a>
+            <a id="sub3e" onclick="showPlots('sub3e', 'GradientBoosting_Regression')">Gradient Boosting</a>
+            <a id="sub3f" onclick="showPlots('sub3f', 'AdaBoost_Regression')">Ada Boost</a>
+            <a id="sub3g" onclick="showPlots('sub3g', 'Neural_Network_Regression')">Neural Network</a>
+        </div>
+        <a id="menu4" onclick="showSubMenuPage('menu4', 'sub4', 'classification')"><span
+                class="material-icons">pivot_table_chart</span> Classification Models</a>
+        <div class="dropdown" id="sub4" style="display: none;">
+            <a id="sub4a" onclick="showReport('sub4a', 'Logistic_Classification')">Logistic</a>
+            <a id="sub4b" onclick="showReport('sub4b', 'SVC_Classification')">SVC</a>
+            <a id="sub4c" onclick="showReport('sub4c', 'DecisionTree_Classification')">Decision Tree</a>
+            <a id="sub4d" onclick="showReport('sub4d', 'RandomForest_Classification')">Random Forest</a>
+            <a id="sub4e" onclick="showReport('sub4e', 'BalancedRandomForest_Classification')">Balanced Random
+                Forest</a>
+            <a id="sub4f" onclick="showReport('sub4f', 'EasyEnsemble_Classification')">Easy Ensemble</a>
+            <a id="sub4g" onclick="showReport('sub4g', 'GradientBoosting_Classification')">Gradient Boosting</a>
+            <a id="sub4h" onclick="showReport('sub4h', 'AdaBoost_Classification')">Ada Boost</a>
+            <a id="sub4i" onclick="showReport('sub4i', 'Neural_Network_Classification')">Neural Network</a>
+        </div>
+        <a id="menu5" onclick="showSubMenuPage('menu5', null, 'observations')"><span
+                class="material-icons">perm_data_setting</span> Observations</a>
+        <a id="menu6" onclick="showSubMenuPage('menu6', null, 'terms')"><span
+                class="material-icons">reorder</span>Technical Terms</a>
+    </div>
+
+    <div class="main">
+        <div id="process" class="page-div">
+            <h1>WasteWater Treatment Facility Operations</h1>
+            <img src="Website/Process.png" alt="Not Found" class="center">
+        </div>
+        <div id="project" class="page-div" style="display: none;">
+            <div id="app"></div>
+        </div>
+        <div id="regression" class="page-div" style="display: none;">
+            <div class="grid-container">
+                <div class="item1">
+                    <h4>Train 9</h4>
+                    <div id="plot9"></div>
+                </div>
+                <div class="item2">
+                    <h4>Train 10</h4>
+                    <div id="plot10"></div>
+                </div>
+                <div class="item3">
+                    <h4>Train 11</h4>
+                    <div id="plot11"></div>
+                </div>
+                <div class="item4 datagrid">
+                    <div id="table9"></div>
+                </div>
+                <div class="item5 datagrid">
+                    <div id="table10"></div>
+                </div>
+                <div class="item6 datagrid">
+                    <div id="table11"></div>
+                </div>
+                <div class="item7">
+                    <h4>Train 12</h4>
+                    <div id="plot12"></div>
+                </div>
+                <div class="item8">
+                    <h4>Train 13</h4>
+                    <div id="plot13"></div>
+                </div>
+                <div class="item9">
+                    <h4>Train 14</h4>
+                    <div id="plot14"></div>
+                </div>
+                <div class="item10 datagrid">
+                    <div id="table12"></div>
+                </div>
+                <div class="item11 datagrid">
+                    <div id="table13"></div>
+                </div>
+                <div class="item12 datagrid">
+                    <div id="table14"></div>
+                </div>
+            </div>
+        </div>
+        <div id="classification" class="page-div" style="display: none;">
+            <div class="grid-container">
+                <div class="item1">
+                    <h4>Train 9</h4>
+                    <div id="report9"></div>
+                </div>
+                <div class="item2">
+                    <h4>Train 10</h4>
+                    <div id="report10"></div>
+                </div>
+                <div class="item3">
+                    <h4>Train 11</h4>
+                    <div id="report11"></div>
+                </div>
+                <div class="item4 datagrid">
+                    <div id="metrics9"></div>
+                </div>
+                <div class="item5 datagrid">
+                    <div id="metrics10"></div>
+                </div>
+                <div class="item6 datagrid">
+                    <div id="metrics11"></div>
+                </div>
+                <div class="item7">
+                    <h4>Train 12</h4>
+                    <div id="report12"></div>
+                </div>
+                <div class="item8">
+                    <h4>Train 13</h4>
+                    <div id="report13"></div>
+                </div>
+                <div class="item9">
+                    <h4>Train 14</h4>
+                    <div id="report14"></div>
+                </div>
+                <div class="item10 datagrid">
+                    <div id="metrics12"></div>
+                </div>
+                <div class="item11 datagrid">
+                    <div id="metrics13"></div>
+                </div>
+                <div class="item12 datagrid">
+                    <div id="metrics14"></div>
+                </div>
+            </div>
+        </div>
+        <div id="observations" class="page-div container" style="display: none;">
+            <img src="Website/bubbles-image.png" alt="Not Found">
+            <div id="obs0" class="content">
+                <h2>Observation #1</h2>
+                <ul>
+                    <li>
+                        <h3>The best of the supervised models were only accurate and predicting "TP > 0.35mg/L" ~67% of
+                            the time</h3>
+                    </li>
+                </ul>
+            </div>
+            <div id="obs1" class="content" style="display: none;">
+                <h2>Observation #2</h2>
+                <ul>
+                    <li>
+                        <h3>Since this was time-series data over ~4 years, it was reviewed for trend and seasonality:
+                            neither were detected</h3>
+                    </li>
+                </ul>
+            </div>
+            <div id="obs2" class="content" style="display: none;">
+                <h2>Observation #3: Regression Models</h2>
+                <ul>
+                    <li>
+                        <h3>Linear Regression, SVR and Neural Network models were moderately successful</h3>
+                    </li>
+                </ul>
+            </div>
+            <div id="obs3" class="content" style="display: none;">
+                <h2>Observation #4: Classification Models</h2>
+                <ul>
+                    <li>
+                        <h3>Only the Balanced Random Forest with SMOTEENN, Gradient Boosting, Ada Boost showed some
+                            promise</h3>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="obs4" class="content" style="display: none;">
+                <h2>Observation #5</h2>
+                <ul>
+                    <li>
+                        <h3>Two unsupervised models - KMeans and Agglomerative Clustering - were tested</h3>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <h3>Both identified clusters where TP > 0.35 -- plotting TP against other factors did not show
+                            any clear relationships</h3>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <h3>KMeans model with PCA showed distinct clusters</h3>
+                    </li>
+                </ul>
+            </div>
+            <div id="obs5" class="content" style="display: none;">
+                <h2>Observation #6</h2>
+                <ul>
+                    <li>
+                        <h3>Feature importances for the model variations were inconsistent</h3>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <h3>TP (total phosphorus) correlates very strongly with SRP (dissolved phosphorus)</h3>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <h3>Removing SRP resulted in much worse performance for all models</h3>
+                    </li>
+                </ul>
+            </div>
+            <div id="obs6" class="content" style="display: none;">
+                <h2>Observation #7</h2>
+                <ul>
+                    <li>
+                        <h3>The data frequency provided (daily values) did not allow for time lag to be used when
+                            preparing the data for the models</h3>
+                    </li>
+                </ul>
+            </div>
+            <div id="obs7" class="content" style="display: none;">
+                <h2>Observation #8</h2>
+                <ul>
+                    <li>
+                        <h3>The available data was mostly analytes, measured in a lab, and which are available hours or
+                            days after the process is complete</h3>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <h3>The analytes from the primaries and secondaries were interpolated (using PCHIP) to fill in
+                            gaps</h3>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <h3>There were significant gaps in the data available for some analytes in the primaries (TKN,
+                            Ammonia, Nitrate, Nitrite), and were not used in the models</h3>
+                    </li>
+                </ul>
+            </div>
+            <div id="obs8" class="content" style="display: none;">
+                <h2>Observation #9</h2>
+                <ul>
+                    <li>
+                        <h3>Train 14 showed better performance for most models -- data was only available for 2 years
+                            for this train</h3>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <h3>Models for trains 9, 12 and 13 had much lower accuracy values</h3>
+                    </li>
+                </ul>
+            </div>
+            <div id="obs9" class="content" style="display: none;">
+                <h2>Outcome</h2>
+                <ul>
+                    <li>
+                        <h3>None of the models were useful enough to accomplish the project goals</h3>
+                    </li>
+                </ul>
+            </div>
+            <div id="obs10" class="content" style="display: none;">
+                <h2>Next Steps</h2>
+                <ul>
+                    <li>
+                        <h3>Determine if the data can be acquired at a higher frequency (currently daily... hourly or
+                            higher may be better). This may require incorporating time lag into the model preparation
+                        </h3>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <h3>Identify which of the inputs are known at the time the process is running (not delayed by
+                            lab testing)</h3>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <h3>Inquire if other inputs are available, specifically those which may have a greater possible
+                            impact on the target (TP > 0.35)</h3>
+                        <ul>
+                            <li>
+                                <h5>Weather data (rainfall, temperature, barometric pressure, cloud cover, ...)</h5>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <h5>Turbidity</h5>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <h5>Aeration blower run-times (possibly via hydro usage)</h5>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <a class="prev" onclick="prevSlide()">&#10094;</a>
+            <a class="next" onclick="nextSlide()">&#10095;</a>
+        </div>
+        <div id="terms" class="page-div container" style="display: none;">
+            <h1>Technical Terms</h1>
+            <table class="terms">
+                <thead>
+                    <tr>
+                        <th>Term</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Aeration</td>
+                        <td>The process of adding air to water. In wastewater treatment, air is added to refreshen
+                            wastewater and to keep solids in suspension. With mixtures of wastewater and activated
+                            sludge, adding air provides mixing and oxygen for the microorganisms treating the
+                            wastewater.</td>
+                    </tr>
+                    <tr>
+                        <td>BOD</td>
+                        <td>Biochemical Oxygen on Demand -- an indirect reading of the organic content present in
+                            wastewater. Specifically, it refers to the amount of oxygen consumed to biologically degrade
+                            the organic material. It’s very expensive to treat, typically requiring a biological
+                            treatment technology like activated sludge</td>
+                    </tr>
+                    <tr>
+                        <td>cBOD</td>
+                        <td>Carbonaceous Biochemical Oxygen Demand -- the amount of oxygen required, under controlled
+                            conditions, to oxidize any carbon containing matter present in a water by biological means.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>COD</td>
+                        <td>Chemical Oxygen Demand -- an indirect reading of the organic content of wastewater.
+                            Specifically, it refers to the amount of oxygen that is required to chemically degrade the
+                            organic material.</td>
+                    </tr>
+                    <tr>
+                        <td>DO</td>
+                        <td>Dissolved Oxygen -- an indication of how much oxygen is present in water. </td>
+                    </tr>
+                    <tr>
+                        <td>Effluent</td>
+                        <td>Wastewater (treated or untreated) that flows out of a facility.</td>
+                    </tr>
+                    <tr>
+                        <td>HW</td>
+                        <td>Headworks -- the facilities where wastewater enters a wastewater treatment plant.</td>
+                    </tr>
+                    <tr>
+                        <td>Influent</td>
+                        <td>Wastewater received at a wastewater treatment facility and includes waste from homes,
+                            businesses and industry; a mixture of water and dissolved and suspended solids.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>MLSS</td>
+                        <td>Mixed Liquor Suspended Solids -- the total concentration of solids in the aeration tanks and
+                            includes both inorganic and organic solids.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Sludge</td>
+                        <td>A mixture of solids and water produced during the treatment of wastewater.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>SRP</td>
+                        <td>Soluble Reactive Phosphorous, or Dissolved Phosphorous -- a measure of orthophosphate, the
+                            filterable (soluble, inorganic) fraction of phosphorus.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>TKN</td>
+                        <td>Total Kjeldahl Nitrogen -- a pollutant found in domestic sewage that is typically a
+                            surcharge parameter for industries.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>TP</td>
+                        <td>Total phosphorus -- a measure of all the forms of phosphorus, dissolved or particulate.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>TSS</td>
+                        <td>Total Suspended Solids -- solids in water that can be trapped by a filter.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>WAS</td>
+                        <td>Waste Activated Sludge -- the activated sludge removed from the secondary treatment process.
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="Website/tree.js"></script>
+    <script src="Website/functions.js"></script>
+    <script src="Website/models.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,236 @@
+{
+    "9": {
+        "outcome": {
+            "Name": "Logistic",
+            "Accuracy Score": "0.8039",
+            "Balanced Accuracy Score": "0.6044",
+            "Actual Exceedance, Predicted Exceedance (TP)": "2",
+            "Actual Exceedance, Predicted Non-Exceedance (FN)": "3",
+            "Actual Non-Exceedance, Predicted Exceedance (FP)": "78",
+            "Actual Non-Exceedance, Predicted Non-Exceedance (TN)": "330",
+            "Actual": "5"
+        },
+        "classification": {
+            "0": {
+                "precision": 0.025,
+                "recall": 0.4,
+                "f1-score": 0.04705882352941177,
+                "support": 5
+            },
+            "1": {
+                "precision": 0.990990990990991,
+                "recall": 0.8088235294117647,
+                "f1-score": 0.8906882591093118,
+                "support": 408
+            },
+            "accuracy": 0.8038740920096852,
+            "macro avg": {
+                "precision": 0.5079954954954955,
+                "recall": 0.6044117647058824,
+                "f1-score": 0.4688735413193618,
+                "support": 413
+            },
+            "weighted avg": {
+                "precision": 0.9792961848046594,
+                "recall": 0.8038740920096852,
+                "f1-score": 0.8804748276858263,
+                "support": 413
+            }
+        }
+    },
+    "10": {
+        "outcome": {
+            "Name": "Logistic",
+            "Accuracy Score": "0.8426",
+            "Balanced Accuracy Score": "0.8221",
+            "Actual Exceedance, Predicted Exceedance (TP)": "12",
+            "Actual Exceedance, Predicted Non-Exceedance (FN)": "3",
+            "Actual Non-Exceedance, Predicted Exceedance (FP)": "62",
+            "Actual Non-Exceedance, Predicted Non-Exceedance (TN)": "336",
+            "Actual": "15"
+        },
+        "classification": {
+            "0": {
+                "precision": 0.16216216216216217,
+                "recall": 0.8,
+                "f1-score": 0.2696629213483146,
+                "support": 15
+            },
+            "1": {
+                "precision": 0.9911504424778761,
+                "recall": 0.8442211055276382,
+                "f1-score": 0.9118046132971506,
+                "support": 398
+            },
+            "accuracy": 0.8426150121065376,
+            "macro avg": {
+                "precision": 0.5766563023200191,
+                "recall": 0.8221105527638191,
+                "f1-score": 0.5907337673227326,
+                "support": 413
+            },
+            "weighted avg": {
+                "precision": 0.9610419092944967,
+                "recall": 0.8426150121065376,
+                "f1-score": 0.8884822758171685,
+                "support": 413
+            }
+        }
+    },
+    "11": {
+        "outcome": {
+            "Name": "Logistic",
+            "Accuracy Score": "0.7918",
+            "Balanced Accuracy Score": "0.6967",
+            "Actual Exceedance, Predicted Exceedance (TP)": "17",
+            "Actual Exceedance, Predicted Non-Exceedance (FN)": "12",
+            "Actual Non-Exceedance, Predicted Exceedance (FP)": "74",
+            "Actual Non-Exceedance, Predicted Non-Exceedance (TN)": "310",
+            "Actual": "29"
+        },
+        "classification": {
+            "0": {
+                "precision": 0.18681318681318682,
+                "recall": 0.5862068965517241,
+                "f1-score": 0.2833333333333333,
+                "support": 29
+            },
+            "1": {
+                "precision": 0.9627329192546584,
+                "recall": 0.8072916666666666,
+                "f1-score": 0.8781869688385269,
+                "support": 384
+            },
+            "accuracy": 0.7917675544794189,
+            "macro avg": {
+                "precision": 0.5747730530339226,
+                "recall": 0.6967492816091954,
+                "f1-score": 0.5807601510859302,
+                "support": 413
+            },
+            "weighted avg": {
+                "precision": 0.9082494513592524,
+                "recall": 0.7917675544794189,
+                "f1-score": 0.8364175852316246,
+                "support": 413
+            }
+        }
+    },
+    "12": {
+        "outcome": {
+            "Name": "Logistic",
+            "Accuracy Score": "0.8692",
+            "Balanced Accuracy Score": "0.4378",
+            "Actual Exceedance, Predicted Exceedance (TP)": "0",
+            "Actual Exceedance, Predicted Non-Exceedance (FN)": "3",
+            "Actual Non-Exceedance, Predicted Exceedance (FP)": "51",
+            "Actual Non-Exceedance, Predicted Non-Exceedance (TN)": "359",
+            "Actual": "3"
+        },
+        "classification": {
+            "0": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 3
+            },
+            "1": {
+                "precision": 0.9917127071823204,
+                "recall": 0.875609756097561,
+                "f1-score": 0.9300518134715027,
+                "support": 410
+            },
+            "accuracy": 0.8692493946731235,
+            "macro avg": {
+                "precision": 0.4958563535911602,
+                "recall": 0.4378048780487805,
+                "f1-score": 0.46502590673575134,
+                "support": 413
+            },
+            "weighted avg": {
+                "precision": 0.9845089829170736,
+                "recall": 0.8692493946731235,
+                "f1-score": 0.9232959891605717,
+                "support": 413
+            }
+        }
+    },
+    "13": {
+        "outcome": {
+            "Name": "Logistic",
+            "Accuracy Score": "0.6804",
+            "Balanced Accuracy Score": "0.3530",
+            "Actual Exceedance, Predicted Exceedance (TP)": "0",
+            "Actual Exceedance, Predicted Non-Exceedance (FN)": "15",
+            "Actual Non-Exceedance, Predicted Exceedance (FP)": "117",
+            "Actual Non-Exceedance, Predicted Non-Exceedance (TN)": "281",
+            "Actual": "15"
+        },
+        "classification": {
+            "0": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 15
+            },
+            "1": {
+                "precision": 0.9493243243243243,
+                "recall": 0.7060301507537688,
+                "f1-score": 0.8097982708933718,
+                "support": 398
+            },
+            "accuracy": 0.6803874092009685,
+            "macro avg": {
+                "precision": 0.47466216216216217,
+                "recall": 0.3530150753768844,
+                "f1-score": 0.4048991354466859,
+                "support": 413
+            },
+            "weighted avg": {
+                "precision": 0.9148452326418428,
+                "recall": 0.6803874092009685,
+                "f1-score": 0.7803867114178256,
+                "support": 413
+            }
+        }
+    },
+    "14": {
+        "outcome": {
+            "Name": "Logistic",
+            "Accuracy Score": "0.7582",
+            "Balanced Accuracy Score": "0.8700",
+            "Actual Exceedance, Predicted Exceedance (TP)": "17",
+            "Actual Exceedance, Predicted Non-Exceedance (FN)": "0",
+            "Actual Non-Exceedance, Predicted Exceedance (FP)": "59",
+            "Actual Non-Exceedance, Predicted Non-Exceedance (TN)": "168",
+            "Actual": "17"
+        },
+        "classification": {
+            "0": {
+                "precision": 0.2236842105263158,
+                "recall": 1.0,
+                "f1-score": 0.3655913978494624,
+                "support": 17
+            },
+            "1": {
+                "precision": 1.0,
+                "recall": 0.7400881057268722,
+                "f1-score": 0.850632911392405,
+                "support": 227
+            },
+            "accuracy": 0.7581967213114754,
+            "macro avg": {
+                "precision": 0.6118421052631579,
+                "recall": 0.8700440528634361,
+                "f1-score": 0.6081121546209337,
+                "support": 244
+            },
+            "weighted avg": {
+                "precision": 0.9459124245038827,
+                "recall": 0.7581967213114754,
+                "f1-score": 0.8168390354488394,
+                "support": 244
+            }
+        }
+    }
+}

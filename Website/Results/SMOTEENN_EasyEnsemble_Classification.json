@@ -1,0 +1,236 @@
+{
+    "9": {
+        "outcome": {
+            "Name": "EasyEnsemble",
+            "Accuracy Score": "0.9322",
+            "Balanced Accuracy Score": "0.5706",
+            "Actual Exceedance, Predicted Exceedance (TP)": "1",
+            "Actual Exceedance, Predicted Non-Exceedance (FN)": "4",
+            "Actual Non-Exceedance, Predicted Exceedance (FP)": "24",
+            "Actual Non-Exceedance, Predicted Non-Exceedance (TN)": "384",
+            "Actual": "5"
+        },
+        "classification": {
+            "0": {
+                "precision": 0.04,
+                "recall": 0.2,
+                "f1-score": 0.06666666666666667,
+                "support": 5
+            },
+            "1": {
+                "precision": 0.9896907216494846,
+                "recall": 0.9411764705882353,
+                "f1-score": 0.964824120603015,
+                "support": 408
+            },
+            "accuracy": 0.9322033898305084,
+            "macro avg": {
+                "precision": 0.5148453608247423,
+                "recall": 0.5705882352941176,
+                "f1-score": 0.5157453936348408,
+                "support": 413
+            },
+            "weighted avg": {
+                "precision": 0.9781932552856895,
+                "recall": 0.9322033898305084,
+                "f1-score": 0.9539505436788461,
+                "support": 413
+            }
+        }
+    },
+    "10": {
+        "outcome": {
+            "Name": "EasyEnsemble",
+            "Accuracy Score": "0.9782",
+            "Balanced Accuracy Score": "0.7000",
+            "Actual Exceedance, Predicted Exceedance (TP)": "6",
+            "Actual Exceedance, Predicted Non-Exceedance (FN)": "9",
+            "Actual Non-Exceedance, Predicted Exceedance (FP)": "0",
+            "Actual Non-Exceedance, Predicted Non-Exceedance (TN)": "398",
+            "Actual": "15"
+        },
+        "classification": {
+            "0": {
+                "precision": 1.0,
+                "recall": 0.4,
+                "f1-score": 0.5714285714285715,
+                "support": 15
+            },
+            "1": {
+                "precision": 0.9778869778869779,
+                "recall": 1.0,
+                "f1-score": 0.9888198757763975,
+                "support": 398
+            },
+            "accuracy": 0.9782082324455206,
+            "macro avg": {
+                "precision": 0.9889434889434889,
+                "recall": 0.7,
+                "f1-score": 0.7801242236024846,
+                "support": 413
+            },
+            "weighted avg": {
+                "precision": 0.9786901142833346,
+                "recall": 0.9782082324455206,
+                "f1-score": 0.9736603853037161,
+                "support": 413
+            }
+        }
+    },
+    "11": {
+        "outcome": {
+            "Name": "EasyEnsemble",
+            "Accuracy Score": "0.9322",
+            "Balanced Accuracy Score": "0.6607",
+            "Actual Exceedance, Predicted Exceedance (TP)": "10",
+            "Actual Exceedance, Predicted Non-Exceedance (FN)": "19",
+            "Actual Non-Exceedance, Predicted Exceedance (FP)": "9",
+            "Actual Non-Exceedance, Predicted Non-Exceedance (TN)": "375",
+            "Actual": "29"
+        },
+        "classification": {
+            "0": {
+                "precision": 0.5263157894736842,
+                "recall": 0.3448275862068966,
+                "f1-score": 0.4166666666666667,
+                "support": 29
+            },
+            "1": {
+                "precision": 0.9517766497461929,
+                "recall": 0.9765625,
+                "f1-score": 0.9640102827763496,
+                "support": 384
+            },
+            "accuracy": 0.9322033898305084,
+            "macro avg": {
+                "precision": 0.7390462196099385,
+                "recall": 0.6606950431034483,
+                "f1-score": 0.6903384747215081,
+                "support": 413
+            },
+            "weighted avg": {
+                "precision": 0.9219016740854113,
+                "recall": 0.9322033898305084,
+                "f1-score": 0.9255769538001248,
+                "support": 413
+            }
+        }
+    },
+    "12": {
+        "outcome": {
+            "Name": "EasyEnsemble",
+            "Accuracy Score": "0.9540",
+            "Balanced Accuracy Score": "0.4805",
+            "Actual Exceedance, Predicted Exceedance (TP)": "0",
+            "Actual Exceedance, Predicted Non-Exceedance (FN)": "3",
+            "Actual Non-Exceedance, Predicted Exceedance (FP)": "16",
+            "Actual Non-Exceedance, Predicted Non-Exceedance (TN)": "394",
+            "Actual": "3"
+        },
+        "classification": {
+            "0": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 3
+            },
+            "1": {
+                "precision": 0.9924433249370277,
+                "recall": 0.9609756097560975,
+                "f1-score": 0.976456009913259,
+                "support": 410
+            },
+            "accuracy": 0.9539951573849879,
+            "macro avg": {
+                "precision": 0.49622166246851385,
+                "recall": 0.48048780487804876,
+                "f1-score": 0.4882280049566295,
+                "support": 413
+            },
+            "weighted avg": {
+                "precision": 0.9852342935210202,
+                "recall": 0.9539951573849879,
+                "f1-score": 0.9693631091148576,
+                "support": 413
+            }
+        }
+    },
+    "13": {
+        "outcome": {
+            "Name": "EasyEnsemble",
+            "Accuracy Score": "0.7409",
+            "Balanced Accuracy Score": "0.4807",
+            "Actual Exceedance, Predicted Exceedance (TP)": "3",
+            "Actual Exceedance, Predicted Non-Exceedance (FN)": "12",
+            "Actual Non-Exceedance, Predicted Exceedance (FP)": "95",
+            "Actual Non-Exceedance, Predicted Non-Exceedance (TN)": "303",
+            "Actual": "15"
+        },
+        "classification": {
+            "0": {
+                "precision": 0.030612244897959183,
+                "recall": 0.2,
+                "f1-score": 0.05309734513274336,
+                "support": 15
+            },
+            "1": {
+                "precision": 0.9619047619047619,
+                "recall": 0.7613065326633166,
+                "f1-score": 0.8499298737727912,
+                "support": 398
+            },
+            "accuracy": 0.7409200968523002,
+            "macro avg": {
+                "precision": 0.4962585034013606,
+                "recall": 0.4806532663316583,
+                "f1-score": 0.45151360945276725,
+                "support": 413
+            },
+            "weighted avg": {
+                "precision": 0.9280805784783648,
+                "recall": 0.7409200968523002,
+                "f1-score": 0.8209892250328379,
+                "support": 413
+            }
+        }
+    },
+    "14": {
+        "outcome": {
+            "Name": "EasyEnsemble",
+            "Accuracy Score": "0.9262",
+            "Balanced Accuracy Score": "0.7971",
+            "Actual Exceedance, Predicted Exceedance (TP)": "11",
+            "Actual Exceedance, Predicted Non-Exceedance (FN)": "6",
+            "Actual Non-Exceedance, Predicted Exceedance (FP)": "12",
+            "Actual Non-Exceedance, Predicted Non-Exceedance (TN)": "215",
+            "Actual": "17"
+        },
+        "classification": {
+            "0": {
+                "precision": 0.4782608695652174,
+                "recall": 0.6470588235294118,
+                "f1-score": 0.55,
+                "support": 17
+            },
+            "1": {
+                "precision": 0.9728506787330317,
+                "recall": 0.947136563876652,
+                "f1-score": 0.9598214285714285,
+                "support": 227
+            },
+            "accuracy": 0.9262295081967213,
+            "macro avg": {
+                "precision": 0.7255557741491245,
+                "recall": 0.7970976937030319,
+                "f1-score": 0.7549107142857143,
+                "support": 244
+            },
+            "weighted avg": {
+                "precision": 0.9383915526844544,
+                "recall": 0.9262295081967213,
+                "f1-score": 0.9312682962529274,
+                "support": 244
+            }
+        }
+    }
+}

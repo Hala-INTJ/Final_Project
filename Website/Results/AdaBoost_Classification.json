@@ -1,0 +1,236 @@
+{
+    "9": {
+        "outcome": {
+            "Name": "AdaBoost",
+            "Accuracy Score": "0.9492",
+            "Balanced Accuracy Score": "0.4804",
+            "Actual Exceedance, Predicted Exceedance (TP)": "0",
+            "Actual Exceedance, Predicted Non-Exceedance (FN)": "5",
+            "Actual Non-Exceedance, Predicted Exceedance (FP)": "16",
+            "Actual Non-Exceedance, Predicted Non-Exceedance (TN)": "392",
+            "Actual": "5"
+        },
+        "classification": {
+            "0": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 5
+            },
+            "1": {
+                "precision": 0.9874055415617129,
+                "recall": 0.9607843137254902,
+                "f1-score": 0.973913043478261,
+                "support": 408
+            },
+            "accuracy": 0.9491525423728814,
+            "macro avg": {
+                "precision": 0.49370277078085645,
+                "recall": 0.4803921568627451,
+                "f1-score": 0.4869565217391305,
+                "support": 413
+            },
+            "weighted avg": {
+                "precision": 0.975451479315203,
+                "recall": 0.9491525423728814,
+                "f1-score": 0.9621223286661755,
+                "support": 413
+            }
+        }
+    },
+    "10": {
+        "outcome": {
+            "Name": "AdaBoost",
+            "Accuracy Score": "0.9855",
+            "Balanced Accuracy Score": "0.8321",
+            "Actual Exceedance, Predicted Exceedance (TP)": "10",
+            "Actual Exceedance, Predicted Non-Exceedance (FN)": "5",
+            "Actual Non-Exceedance, Predicted Exceedance (FP)": "1",
+            "Actual Non-Exceedance, Predicted Non-Exceedance (TN)": "397",
+            "Actual": "15"
+        },
+        "classification": {
+            "0": {
+                "precision": 0.9090909090909091,
+                "recall": 0.6666666666666666,
+                "f1-score": 0.7692307692307692,
+                "support": 15
+            },
+            "1": {
+                "precision": 0.9875621890547264,
+                "recall": 0.9974874371859297,
+                "f1-score": 0.9925,
+                "support": 398
+            },
+            "accuracy": 0.9854721549636803,
+            "macro avg": {
+                "precision": 0.9483265490728177,
+                "recall": 0.8320770519262981,
+                "f1-score": 0.8808653846153847,
+                "support": 413
+            },
+            "weighted avg": {
+                "precision": 0.9847121425669364,
+                "recall": 0.9854721549636803,
+                "f1-score": 0.9843909480350159,
+                "support": 413
+            }
+        }
+    },
+    "11": {
+        "outcome": {
+            "Name": "AdaBoost",
+            "Accuracy Score": "0.9443",
+            "Balanced Accuracy Score": "0.6991",
+            "Actual Exceedance, Predicted Exceedance (TP)": "12",
+            "Actual Exceedance, Predicted Non-Exceedance (FN)": "17",
+            "Actual Non-Exceedance, Predicted Exceedance (FP)": "6",
+            "Actual Non-Exceedance, Predicted Non-Exceedance (TN)": "378",
+            "Actual": "29"
+        },
+        "classification": {
+            "0": {
+                "precision": 0.6666666666666666,
+                "recall": 0.41379310344827586,
+                "f1-score": 0.5106382978723404,
+                "support": 29
+            },
+            "1": {
+                "precision": 0.9569620253164557,
+                "recall": 0.984375,
+                "f1-score": 0.9704749679075738,
+                "support": 384
+            },
+            "accuracy": 0.9443099273607748,
+            "macro avg": {
+                "precision": 0.8118143459915612,
+                "recall": 0.6990840517241379,
+                "f1-score": 0.7405566328899571,
+                "support": 413
+            },
+            "weighted avg": {
+                "precision": 0.936578089721192,
+                "recall": 0.9443099273607748,
+                "f1-score": 0.9381861944668431,
+                "support": 413
+            }
+        }
+    },
+    "12": {
+        "outcome": {
+            "Name": "AdaBoost",
+            "Accuracy Score": "0.9734",
+            "Balanced Accuracy Score": "0.6557",
+            "Actual Exceedance, Predicted Exceedance (TP)": "1",
+            "Actual Exceedance, Predicted Non-Exceedance (FN)": "2",
+            "Actual Non-Exceedance, Predicted Exceedance (FP)": "9",
+            "Actual Non-Exceedance, Predicted Non-Exceedance (TN)": "401",
+            "Actual": "3"
+        },
+        "classification": {
+            "0": {
+                "precision": 0.1,
+                "recall": 0.3333333333333333,
+                "f1-score": 0.15384615384615383,
+                "support": 3
+            },
+            "1": {
+                "precision": 0.9950372208436724,
+                "recall": 0.9780487804878049,
+                "f1-score": 0.9864698646986471,
+                "support": 410
+            },
+            "accuracy": 0.9733656174334141,
+            "macro avg": {
+                "precision": 0.5475186104218362,
+                "recall": 0.6556910569105691,
+                "f1-score": 0.5701580092724005,
+                "support": 413
+            },
+            "weighted avg": {
+                "precision": 0.9885357398205948,
+                "recall": 0.9733656174334141,
+                "f1-score": 0.9804217505762318,
+                "support": 413
+            }
+        }
+    },
+    "13": {
+        "outcome": {
+            "Name": "AdaBoost",
+            "Accuracy Score": "0.7579",
+            "Balanced Accuracy Score": "0.3932",
+            "Actual Exceedance, Predicted Exceedance (TP)": "0",
+            "Actual Exceedance, Predicted Non-Exceedance (FN)": "15",
+            "Actual Non-Exceedance, Predicted Exceedance (FP)": "85",
+            "Actual Non-Exceedance, Predicted Non-Exceedance (TN)": "313",
+            "Actual": "15"
+        },
+        "classification": {
+            "0": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 15
+            },
+            "1": {
+                "precision": 0.9542682926829268,
+                "recall": 0.7864321608040201,
+                "f1-score": 0.862258953168044,
+                "support": 398
+            },
+            "accuracy": 0.7578692493946732,
+            "macro avg": {
+                "precision": 0.4771341463414634,
+                "recall": 0.39321608040201006,
+                "f1-score": 0.431129476584022,
+                "support": 413
+            },
+            "weighted avg": {
+                "precision": 0.9196096379849996,
+                "recall": 0.7578692493946732,
+                "f1-score": 0.8309420420360327,
+                "support": 413
+            }
+        }
+    },
+    "14": {
+        "outcome": {
+            "Name": "AdaBoost",
+            "Accuracy Score": "0.9549",
+            "Balanced Accuracy Score": "0.8125",
+            "Actual Exceedance, Predicted Exceedance (TP)": "11",
+            "Actual Exceedance, Predicted Non-Exceedance (FN)": "6",
+            "Actual Non-Exceedance, Predicted Exceedance (FP)": "5",
+            "Actual Non-Exceedance, Predicted Non-Exceedance (TN)": "222",
+            "Actual": "17"
+        },
+        "classification": {
+            "0": {
+                "precision": 0.6875,
+                "recall": 0.6470588235294118,
+                "f1-score": 0.6666666666666667,
+                "support": 17
+            },
+            "1": {
+                "precision": 0.9736842105263158,
+                "recall": 0.9779735682819384,
+                "f1-score": 0.9758241758241758,
+                "support": 227
+            },
+            "accuracy": 0.9549180327868853,
+            "macro avg": {
+                "precision": 0.830592105263158,
+                "recall": 0.812516195905675,
+                "f1-score": 0.8212454212454212,
+                "support": 244
+            },
+            "weighted avg": {
+                "precision": 0.9537451466781709,
+                "recall": 0.9549180327868853,
+                "f1-score": 0.9542845133009068,
+                "support": 244
+            }
+        }
+    }
+}

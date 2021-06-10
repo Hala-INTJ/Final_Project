@@ -1,0 +1,342 @@
+{
+    "name": "",
+    "children": [
+        {
+            "name": "Data Acquisition",
+            "children": [
+                {
+                    "name": "Influent",
+                    "children": [
+                        {
+                            "name": "Flow"
+                        },
+                        {
+                            "name": "TSS"
+                        },
+                        {
+                            "name": "TP"
+                        },
+                        {
+                            "name": "SRP"
+                        },
+                        {
+                            "name": "BOD"
+                        },
+                        {
+                            "name": "COD"
+                        },
+                        {
+                            "name": "CBOD"
+                        },
+                        {
+                            "name": "Nitrate"
+                        },
+                        {
+                            "name": "Nitrite"
+                        },
+                        {
+                            "name": "Ammonia"
+                        },
+                        {
+                            "name": "TKN"
+                        },
+                        {
+                            "name": "ALK"
+                        },
+                        {
+                            "name": "Temp"
+                        },
+                        {
+                            "name": "pH"
+                        }
+                    ]
+                },
+                {
+                    "name": "Preliminary Treatment",
+                    "children": [
+                        {
+                            "name": "Grit Tank Iron Dosage"
+                        }
+                    ]
+                },
+                {
+                    "name": "Primary Treatment",
+                    "children": [
+                        {
+                            "name": "Sludge Depth"
+                        },
+                        {
+                            "name": "Sludge Solids %"
+                        },
+                        {
+                            "name": "TSS"
+                        },
+                        {
+                            "name": "TP"
+                        },
+                        {
+                            "name": "SRP"
+                        },
+                        {
+                            "name": "COD"
+                        },
+                        {
+                            "name": "Nitrate"
+                        },
+                        {
+                            "name": "Nitrite"
+                        },
+                        {
+                            "name": "Ammonia"
+                        },
+                        {
+                            "name": "TKN"
+                        }
+                    ]
+                },
+                {
+                    "name": "Aeration",
+                    "children": [
+                        {
+                            "name": "Dissolved Oxygen"
+                        },
+                        {
+                            "name": "MLSS"
+                        }
+                    ]
+                },
+                {
+                    "name": "Secondary Treatment",
+                    "children": [
+                        {
+                            "name": "Sludge Depth"
+                        },
+                        {
+                            "name": "TSS"
+                        },
+                        {
+                            "name": "TP"
+                        },
+                        {
+                            "name": "SRP"
+                        },
+                        {
+                            "name": "COD"
+                        },
+                        {
+                            "name": "CBOD"
+                        },
+                        {
+                            "name": "Nitrate"
+                        },
+                        {
+                            "name": "Nitrite"
+                        },
+                        {
+                            "name": "Ammonia"
+                        },
+                        {
+                            "name": "TKN"
+                        },
+                        {
+                            "name": "Waste Activated Sludge Flow"
+                        },
+                        {
+                            "name": "Effluent Flow"
+                        }
+                    ]
+                },
+                {
+                    "name": "Incineration",
+                    "children": [
+                        {
+                            "name": "Daily Dry Tonnes incinerated"
+                        }
+                    ]
+                },
+                {
+                    "name": "Effluent",
+                    "children": [
+                        {
+                            "name": "TSS"
+                        },
+                        {
+                            "name": "TP"
+                        },
+                        {
+                            "name": "SRP"
+                        },
+                        {
+                            "name": "BOD"
+                        },
+                        {
+                            "name": "CBOD"
+                        },
+                        {
+                            "name": "Nitrate"
+                        },
+                        {
+                            "name": "Nitrite"
+                        },
+                        {
+                            "name": "Ammonia"
+                        },
+                        {
+                            "name": "TKN"
+                        },
+                        {
+                            "name": "ALK"
+                        },
+                        {
+                            "name": "Temp"
+                        },
+                        {
+                            "name": "pH"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "ETL Implementation",
+            "children": [
+                {
+                    "name": "Load the data into a DataFrame from Excel"
+                },
+                {
+                    "name": "Remove Text and replace with NaN"
+                },
+                {
+                    "name": "Remove less than sign, and replace with 1/2 the original value (<x becomes x/2)"
+                },
+                {
+                    "name": "Remove greater than sign, and replace with the original value (>x becomes x)"
+                },
+                {
+                    "name": "Convert the data type to numeric for all columns except the Time column"
+                },
+                {
+                    "name": "Identify outliers using STL (Seasonal and Trend decomposition using Loess)"
+                },
+                {
+                    "name": "Remove outliers and replace with NaN"
+                },
+                {
+                    "name": "Replace negative values with 0"
+                },
+                {
+                    "name": "Interpolate using 'pchip' method (Piecewise Cubic Hermite Interpolating Polynomial) to fill gaps"
+                },
+                {
+                    "name": "Transformed column headers to ML Tags using a standardized naming convention (Train, Stage, Process Area, Pri/Sec, Type)"
+                },
+                {
+                    "name": "Write the DataFrame to Postgres Database"
+                }
+            ]
+        },
+        {
+            "name": "Postgres Database",
+            "children": [
+                {
+                    "name": "Tags"
+                },
+                {
+                    "name": "Influent"
+                },
+                {
+                    "name": "Preliminary"
+                },
+                {
+                    "name": "Primary"
+                },
+                {
+                    "name": "Aeration"
+                },
+                {
+                    "name": "Secondary"
+                },
+                {
+                    "name": "Incineration"
+                },
+                {
+                    "name": "Effluent"
+                }
+            ]
+        },
+        {
+            "name": "Supervised Models",
+            "children": [
+                {
+                    "name": "Regression",
+                    "children": [
+                        {
+                            "name": "Linear Regression"
+                        },
+                        {
+                            "name": "SVR (Linear)"
+                        },
+                        {
+                            "name": "Descision Tree Regression"
+                        },
+                        {
+                            "name": "Random Forest Regression"
+                        },
+                        {
+                            "name": "Gradient Boosting Regressor"
+                        },
+                        {
+                            "name": "Ada Boost Regressor"
+                        },
+                        {
+                            "name": "Neural Network"
+                        }
+                    ]
+                },
+                {
+                    "name": "Classification",
+                    "children": [
+                        {
+                            "name": "Logistic Regression (lbfgs)"
+                        },
+                        {
+                            "name": "SVC (poly)"
+                        },
+                        {
+                            "name": "Descision Tree Classification"
+                        },
+                        {
+                            "name": "Random Forest Classification"
+                        },
+                        {
+                            "name": "Balanced Random Forest Classification"
+                        },
+                        {
+                            "name": "Easy Ensemble Classification"
+                        },
+                        {
+                            "name": "Gradient Boosting Classifier"
+                        },
+                        {
+                            "name": "Ada Boost Classifier"
+                        },
+                        {
+                            "name": "Neural Network"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Unsupervised Models",
+            "children": [
+                {
+                    "name": "KMeans"
+                },
+                {
+                    "name": "Agglomerative Clustering"
+                }
+            ]
+        }
+    ]
+}

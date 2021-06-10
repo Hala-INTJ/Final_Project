@@ -136,13 +136,54 @@ The unsupervised models were created to better explore the classes where the tot
 For each of the six trains analyzed, the following methods were implemented:
 - KMeans
 - Agglomerative Clustering
+
+### Week 4:
+A webpage was built to present the Wastewater treatment process overview, the project overview and the results of the Regression and Classification models. The data files for the web page are in [Results Folder], the web application logic is in [models.js](), [functions.js]() and [tree.js](), and the structure of the webpage is in [index.html](). The [styles.css]() is used to format the contents of the webpage.
 #### Observations
-- The best of the supervised models were only accurate and predicting TP > 0.35mg/L ~67% of the time
-- Of the regression models, only the Linear Regression, Gradient Boosting Regressor and Neural Network models were moderately successful
-- Of the classification models, only the Gradient Boosting Classifier (SMOTEENN) showed some promise
-- Of the unsupervised models, neither was particularly useful in detecting meaningful correlations between the data elements
-- Feature importances for the models were not consistent, although SRP was the dominant feature for most of the models
+Observation #1:
+- The best of the supervised models were only accurate and predicting "TP > 0.35mg/L" ~67% of
+the time
+
+Observation #2:
+- Since this was time-series data over ~4 years, it was reviewed for trend and seasonality: neither were detected
+
+Observation #3: Regression Models
+- Linear Regression, SVR and Neural Network models were moderately successful
+
+Observation #4: Classification Models
+- Only the Balanced Random Forest with SMOTEENN, Gradient Boosting, Ada Boost showed some promise
+
+Observation #5:
+- Two unsupervised models - KMeans and Agglomerative Clustering - were tested
+- Both identified clusters where TP > 0.35 -- plotting TP against other factors did not show any clear relationships
+- KMeans model with PCA showed distinct clusters
+
+Observation #6:
+- Feature importances for the models variations were inconsistent
+- TP (total phosphorus) correlates very strongly with SRP (dissolved phosphorus)
+- Removing SRP resulted in much worse performance for all models
+
+Observation #7
 - The data frequency provided (daily values) did not allow for time lag to be used when preparing the data for the models
+
+Observation #8
+- The available data was mostly analytes, measured in a lab, and which are available hours or days after the process is complete
+- The analytes from the primaries and secondaries were interpolated (using PCHIP) to fill in gaps
+- There were significant gaps in the data available for some analytes in the primaries (TKN, Ammonia, Nitrate, Nitrite), and were not used in the models
+
+Observation #9
+- Train 14 showed better performance for most models -- data was only available for 2 years for this train
+- Models for trains 9, 12 and 13 had much lower accuracy values
+
+Outcome: None of the models were useful enough to accomplish the project goals
+#### Next Steps
+- Determine if the data can be acquired at a higher frequency (currently daily... hourly or higher may be better). This may require incorporating tag lag into the model preparation
+- Identify which of the inputs are known at the time the process is running (not delayed by lab testing)
+- Inquire other inputs are available, specifically those which may have a greater possible impact on the target (TP > 0.35)
+    - Weather data (rainfall, temperature, barometric pressure, cloud cover, ...)
+    - Turbidity
+    - Aeration blower run-times (possibly via hydro usage)
+    - Is the influent solely waste, or mixed with rainfall run-off?
 ## Technical Terms
 
 **Aeration**: The process of adding air to water. In wastewater treatment, air is added to refreshen wastewater and to keep solids in suspension. With mixtures of wastewater and activated sludge, adding air provides mixing and oxygen for the microorganisms treating the wastewater. 

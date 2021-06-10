@@ -1,0 +1,257 @@
+body {
+    font-family: Arial;
+  }
+
+  h1 {text-align: center;}
+  h4 {text-align: center;}
+
+  /* Styling the Tree */
+  .node circle {
+    fill: #999;
+  }
+  
+  .node text {
+    font: 10px Arial;
+  }
+  
+  .node--internal circle {
+    fill: #555;
+  }
+  
+  .node--internal text {
+    text-shadow: 0 1px 0 #fff, 0 -1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff;
+  }
+  
+  .link {
+    fill: none;
+    stroke: #555;
+    stroke-opacity: 0.4;
+    stroke-width: 1.5px;
+  }
+  
+  form {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+  }
+  
+  label {
+    display: block;
+  }
+
+  li {
+    padding-top: 10;
+  }
+
+/* Style the sidebar - fixed full height */
+.sidebar {
+  height: 100%;
+  width: 220px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 100px;
+}
+
+/* Style sidebar links */
+.sidebar a {
+  padding: 6px 8px 6px 6px;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  color: #818181;
+}
+
+/* Style links on mouse-over */
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+/* Style sidebar links */
+.sidebar a, .dropdown {
+  padding: 6px 8px 6px 30px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #818181;
+  display: block;
+}
+
+.sidebar a, span {
+  vertical-align: middle;
+}
+
+.sidebar a.activeMenuItem {
+  background-color: #FFF;
+  font-weight: bold;
+}
+
+/* Style the main content */
+.main {
+  margin-left: 220px; /* Same as the width of the sidenav */
+  padding: 0px 10px;
+}
+
+/* Add media queries for small screens (when the height of the screen is less than 450px, add a smaller padding and font-size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+/* grid */
+.grid-container {
+  display: grid;
+  grid-template-columns: 480px 480px 480px ;
+  grid-template-rows: auto auto auto auto;
+  column-gap: 10px; 
+  /* grid-column-gap: 25px;
+  grid-row-gap: 50px; */
+}
+
+/* table */
+table.datagrid {
+  border: 3px solid #000000;
+  /* width: 100%; */
+  text-align: center;
+  border-collapse: collapse;
+  margin: 0px 10px 0px 30px; 
+}
+table.datagrid td, table.datagrid th {
+  border: 1px solid #000000;
+  padding: 5px 4px;
+}
+table.datagrid td, table.datagrid th, .column1 {
+  width: 250px !important;
+}
+table.datagrid tbody td {
+  font-size: 13px;
+}
+table.datagrid thead {
+  background: #CFCFCF;
+  background: -moz-linear-gradient(top, #dbdbdb 0%, #d3d3d3 66%, #CFCFCF 100%);
+  background: -webkit-linear-gradient(top, #dbdbdb 0%, #d3d3d3 66%, #CFCFCF 100%);
+  background: linear-gradient(to bottom, #dbdbdb 0%, #d3d3d3 66%, #CFCFCF 100%);
+  border-bottom: 3px solid #000000;
+}
+table.datagrid thead th {
+  font-size: 10px;
+  font-weight: bold;
+  width: 70px;
+  color: #000000;
+  text-align: center;
+}
+
+/* image */
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+/*Observations SlideShow*/
+.container {
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  text-align: center;
+}
+
+.container .content {
+  position: absolute; /* Position the background text */
+  bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.8); /* Black background with 0.5 opacity */
+  color: #f1f1f1; /* Grey text */
+  padding: 20px; /* Some padding */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1160px;
+  text-align: left;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  margin-top: 22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.prev {
+  left: 0;
+  border-radius: 0 3px 3px 0;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8)
+}
+
+h2 {
+  font-size: 36px;
+  font-family: Arial, sans-serif;
+}
+
+h3 {
+  font-size: 30px;
+  font-family: Arial, sans-serif;
+}
+
+h5 {
+  font-size: 24px;
+  font-family: Arial, sans-serif;
+}
+
+li::marker {
+  font-size: 2em;
+}
+
+/* Terms table styles */
+
+table.terms {
+  width: 100%;
+  background-color: white;
+  border-collapse: collapse;
+  border-width: 2px;
+  border-color: #50BBD4;
+  border-style: solid;
+  color: #000000;
+}
+
+table.terms td, table.terms th {
+  border-width: 2px;
+  border-color: #50BBD4;
+  border-style: solid;
+  padding: 5px;
+}
+
+table.terms thead {
+  background-color: #50BBD4;
+}
+
+table.terms tr:nth-child(even) {
+  background-color: #DDDDDD;
+}
+  
+
+table.terms tr td:nth-child(2) {
+  text-align: left;
+}
